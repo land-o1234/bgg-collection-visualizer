@@ -3,8 +3,8 @@ Similarity computation for board games.
 Computes pairwise similarity scores based on mechanics, categories, and numeric features.
 """
 import logging
+import math
 from typing import Dict, Any, List, Tuple, Set
-import numpy as np
 
 log = logging.getLogger(__name__)
 
@@ -22,19 +22,24 @@ def jaccard_similarity(set1: Set[str], set2: Set[str]) -> float:
     return intersection / union if union > 0 else 0.0
 
 
-def cosine_similarity(vec1: np.ndarray, vec2: np.ndarray) -> float:
+def cosine_similarity(vec1: List[float], vec2: List[float]) -> float:
     """Compute cosine similarity between two vectors."""
-    # Handle zero vectors
-    norm1 = np.linalg.norm(vec1)
-    norm2 = np.linalg.norm(vec2)
-    
-    if norm1 == 0 or norm2 == 0:
+    if len(vec1) != len(vec2):
         return 0.0
     
-    return np.dot(vec1, vec2) / (norm1 * norm2)
+    # Compute dot product and magnitudes
+    dot_product = sum(a * b for a, b in zip(vec1, vec2))
+    magnitude1 = math.sqrt(sum(a * a for a in vec1))
+    magnitude2 = math.sqrt(sum(b * b for b in vec2))
+    
+    # Handle zero vectors
+    if magnitude1 == 0 or magnitude2 == 0:
+        return 0.0
+    
+    return dot_product / (magnitude1 * magnitude2)
 
 
-def normalize_numeric_features(games: Dict[str, Dict[str, Any]]) -> Dict[str, np.ndarray]:
+def normalize_numeric_features(games: Dict[str, Dict[str, Any]]) -> Dict[str, List[float]]:
     """
     Extract and normalize numeric features for all games.
     Returns dict mapping game_id -> normalized feature vector.
@@ -57,24 +62,30 @@ def normalize_numeric_features(games: Dict[str, Dict[str, Any]]) -> Dict[str, np
             features.append(value)
             all_values[feature].append(value)
         
-        game_features[game_id] = np.array(features)
+        game_features[game_id] = features
     
     # Compute mean and std for normalization (avoid division by zero)
-    means = np.array([np.mean(all_values[f]) for f in feature_names])
-    stds = np.array([np.std(all_values[f]) for f in feature_names])
-    stds = np.where(stds == 0, 1.0, stds)  # Replace 0 std with 1 to avoid division by zero
+    means = []
+    stds = []
+    for feature in feature_names:
+        values = all_values[feature]
+        mean = sum(values) / len(values) if values else 0.0
+        variance = sum((x - mean) ** 2 for x in values) / len(values) if values else 0.0
+        std = math.sqrt(variance) if variance > 0 else 1.0
+        means.append(mean)
+        stds.append(std)
     
     # Normalize all features
     normalized_features = {}
     for game_id, features in game_features.items():
-        normalized = (features - means) / stds
+        normalized = [(features[i] - means[i]) / stds[i] for i in range(len(features))]
         normalized_features[game_id] = normalized
     
     return normalized_features
 
 
 def compute_game_similarity(game1: Dict[str, Any], game2: Dict[str, Any], 
-                          normalized_features1: np.ndarray, normalized_features2: np.ndarray,
+                          normalized_features1: List[float], normalized_features2: List[float],
                           mechanics_weight: float = 0.5, 
                           categories_weight: float = 0.3, 
                           numeric_weight: float = 0.2) -> float:
@@ -136,7 +147,7 @@ def compute_similarity_edges(games: Dict[str, Dict[str, Any]],
             
             similarity = compute_game_similarity(
                 games[id1], games[id2],
-                normalized_features[id1], normalized_features[j],
+                normalized_features[id1], normalized_features[id2],
                 mechanics_weight, categories_weight, numeric_weight
             )
             

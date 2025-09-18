@@ -1,0 +1,72 @@
+name: Generate BGG Data
+
+on:
+  # Run daily at 6 AM UTC
+  schedule:
+    - cron: '0 6 * * *'
+  
+  # Allow manual triggering
+  workflow_dispatch:
+    inputs:
+      username:
+        description: 'BGG username'
+        required: true
+        default: 'InspiringChicken'
+      edge_threshold:
+        description: 'Similarity threshold (0.0-1.0)'
+        required: false
+        default: '0.35'
+
+env:
+  BGG_USERNAME: ${{ github.event.inputs.username || 'InspiringChicken' }}
+  EDGE_THRESHOLD: ${{ github.event.inputs.edge_threshold || '0.35' }}
+
+jobs:
+  generate-data:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.12'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    - name: Create data directory
+      run: mkdir -p docs/data
+    
+    - name: Generate BGG data
+      run: |
+        python src/generate_data.py \
+          --username "$BGG_USERNAME" \
+          --edge-threshold "$EDGE_THRESHOLD" \
+          --out-dir docs/data
+      
+    - name: Verify generated files
+      run: |
+        ls -la docs/data/
+        echo "Node count: $(jq length docs/data/nodes.json)"
+        echo "Edge count: $(jq length docs/data/edges.json)"
+        if [ -f docs/data/recs.json ]; then
+          echo "Recommendations: $(jq 'keys | length' docs/data/recs.json) games"
+        fi
+    
+    - name: Commit and push data
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add docs/data/
+        
+        if git diff --cached --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "Update BGG data for $BGG_USERNAME ($(date))"
+          git push
+        fi

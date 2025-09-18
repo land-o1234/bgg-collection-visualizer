@@ -13,9 +13,9 @@ function edgeId(a, b) {
 }
 
 async function main() {
-  // Expect these JSON files to be available at ../data relative to static/
-  const nodes = await loadJSON("../data/nodes.json");
-  const edges = await loadJSON("../data/edges.json");
+  // Expect these JSON files to be available at ../docs/data relative to static/
+  const nodes = await loadJSON("../docs/data/nodes.json");
+  const edges = await loadJSON("../docs/data/edges.json");
 
   // Build Cytoscape elements
   const elements = [];
@@ -140,9 +140,9 @@ async function main() {
     });
   });
 
-  // Optional: try to load static recommendations if you add data/recs.json later
+  // Optional: try to load static recommendations if you add docs/data/recs.json later
   try {
-    const recs = await loadJSON("../data/recs.json"); // expected: { [id]: [{id,name,score,bggUrl}] }
+    const recs = await loadJSON("../docs/data/recs.json"); // expected: { [id]: [{id,name,score,bggUrl}] }
     recsEl.innerHTML = "<em>Click a game to see recommendations</em>";
     cy.on("select", "node", evt => {
       const id = String(evt.target.id());
