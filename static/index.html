@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Board Game Collection Visualizer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Cytoscape.js -->
+  <script src="https://unpkg.com/cytoscape@3.30.2/dist/cytoscape.min.js"></script>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div id="sidebar">
+    <div class="section">
+      <input id="search" placeholder="Search by name..." />
+      <div id="search-results"></div>
+    </div>
+    <div id="details" class="section">
+      <h2 id="game-title">Select a game</h2>
+      <div id="meta"></div>
+      <div id="lists">
+        <h3>Related (neighbors)</h3>
+        <div id="neighbors"></div>
+        <h3>Recommendations</h3>
+        <div id="recs"><em>Provide an API key or prebuilt recs.json to enable.</em></div>
+      </div>
+    </div>
+  </div>
+  <div id="graph"></div>
+
+  <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+:root {
+  --bg: #0f172a;
+  --panel: #111827;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --accent: #22d3ee;
+  --edge: #94a3b8;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+#sidebar {
+  height: 100%;
+  overflow-y: auto;
+  background: var(--panel);
+  border-right: 1px solid #1f2937;
+  padding: 12px;
+}
+#graph {
+  height: 100%;
+  width: 100%;
+}
+
+.section { margin-bottom: 16px; }
+#search {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #374151;
+  background: #0b1220;
+  color: var(--text);
+}
+#search-results div {
+  padding: 6px 8px;
+  margin-top: 6px;
+  border-radius: 6px;
+  background: #0b1220;
+  cursor: pointer;
+}
+#search-results div:hover {
+  background: #0d1628;
+}
+#game-title {
+  font-size: 18px;
+  margin: 8px 0;
+}
+#meta b { color: var(--accent); }
+#neighbors div, #recs div {
+  padding: 6px 8px;
+  margin: 4px 0;
+  background: #0b1220;
+  border-radius: 6px;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
