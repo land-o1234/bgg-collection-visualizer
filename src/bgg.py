@@ -13,7 +13,7 @@ log = logging.getLogger(__name__)
 BGG_API_BASE = "https://boardgamegeek.com/xmlapi2"
 RETRY_DELAY = 1.5  # initial delay between retries (exponential backoff)
 MAX_RETRIES = 3
-SEARCH_MAX_RETRIES = 5  # search endpoint needs more retries
+SEARCH_MAX_RETRIES = 8  # search endpoint is more unreliable, needs more retries
 REQUEST_TIMEOUT = 60  # increased timeout for better reliability
 
 

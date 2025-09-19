@@ -76,13 +76,22 @@ def main():
     # Generate recommendations if not skipped
     if not args.skip_recs:
         log.info("Generating recommendations...")
-        recommendations = generate_recommendations(details, args.rec_search_terms)
-        
-        recs_path = os.path.join(args.out_dir, "recs.json")
-        with open(recs_path, "w", encoding="utf-8") as f:
-            json.dump(recommendations, f, ensure_ascii=False, indent=2)
-        
-        log.info(f"Wrote {recs_path}")
+        try:
+            recommendations = generate_recommendations(details, args.rec_search_terms)
+            
+            recs_path = os.path.join(args.out_dir, "recs.json")
+            with open(recs_path, "w", encoding="utf-8") as f:
+                json.dump(recommendations, f, ensure_ascii=False, indent=2)
+            
+            log.info(f"Wrote {recs_path}")
+        except Exception as e:
+            log.error(f"Failed to generate recommendations: {e}")
+            log.info("Continuing without recommendations...")
+            # Create empty recommendations file as fallback
+            recs_path = os.path.join(args.out_dir, "recs.json")
+            with open(recs_path, "w", encoding="utf-8") as f:
+                json.dump({}, f, ensure_ascii=False, indent=2)
+            log.info(f"Created empty {recs_path}")
     else:
         log.info("Skipping recommendations generation")
 
@@ -102,17 +111,21 @@ def generate_recommendations(owned_games: Dict[str, Dict[str, Any]],
     
     for term in search_terms:
         log.info(f"Searching for: {term}")
-        search_results = search_games(term, limit=candidates_per_term)
-        
-        for result in search_results:
-            candidate_id = result["id"]
-            # Skip games already owned
-            if candidate_id not in owned_ids:
-                candidate_games[candidate_id] = {
-                    "id": candidate_id,
-                    "name": result["name"],
-                    "year": result.get("year")
-                }
+        try:
+            search_results = search_games(term, limit=candidates_per_term)
+            
+            for result in search_results:
+                candidate_id = result["id"]
+                # Skip games already owned
+                if candidate_id not in owned_ids:
+                    candidate_games[candidate_id] = {
+                        "id": candidate_id,
+                        "name": result["name"],
+                        "year": result.get("year")
+                    }
+        except Exception as e:
+            log.warning(f"Failed to search for '{term}': {e}")
+            continue
     
     log.info(f"Found {len(candidate_games)} unique candidate games")
     

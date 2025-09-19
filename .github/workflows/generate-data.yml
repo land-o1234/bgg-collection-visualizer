@@ -48,6 +48,18 @@ jobs:
           --username "$BGG_USERNAME" \
           --edge-threshold "$EDGE_THRESHOLD" \
           --out-dir docs/data
+      continue-on-error: true
+      id: generate_full
+
+    - name: Generate BGG data (without recommendations) 
+      if: steps.generate_full.outcome == 'failure'
+      run: |
+        echo "Full generation failed, retrying without recommendations..."
+        python src/generate_data.py \
+          --username "$BGG_USERNAME" \
+          --edge-threshold "$EDGE_THRESHOLD" \
+          --out-dir docs/data \
+          --skip-recs
       
     - name: Verify generated files
       run: |
@@ -62,7 +74,7 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add docs/data/
+        git add -f docs/data/
         
         if git diff --cached --quiet; then
           echo "No changes to commit"

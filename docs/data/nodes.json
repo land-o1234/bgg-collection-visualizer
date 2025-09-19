@@ -1,0 +1,28 @@
+[
+  {
+    "id": "1",
+    "label": "Test Game 1",
+    "name": "Test Game 1",
+    "mechanics": ["Worker Placement"],
+    "categories": ["Strategy"],
+    "averageweight": 3.5,
+    "averagerating": 7.8,
+    "playingtime": 90,
+    "minplayers": 2,
+    "maxplayers": 4,
+    "bggUrl": "https://boardgamegeek.com/boardgame/1"
+  },
+  {
+    "id": "2",
+    "label": "Test Game 2", 
+    "name": "Test Game 2",
+    "mechanics": ["Engine Building"],
+    "categories": ["Strategy"],
+    "averageweight": 2.8,
+    "averagerating": 8.1,
+    "playingtime": 60,
+    "minplayers": 1,
+    "maxplayers": 5,
+    "bggUrl": "https://boardgamegeek.com/boardgame/2"
+  }
+]
