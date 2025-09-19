@@ -164,5 +164,106 @@ async function main() {
 
 main().catch(err => {
   console.error(err);
-  alert("Failed to load data. Make sure ../data/nodes.json and ../data/edges.json exist.");
+  // Check if it's a cytoscape issue
+  if (err.message && err.message.includes('cytoscape is not defined')) {
+    loadSimpleFallback();
+  } else {
+    alert("Failed to load data. Make sure ../docs/data/nodes.json and ../docs/data/edges.json exist.");
+  }
 });
+
+// Simple fallback when Cytoscape.js is not available
+async function loadSimpleFallback() {
+  try {
+    const nodes = await loadJSON("../docs/data/nodes.json");
+    const edges = await loadJSON("../docs/data/edges.json");
+    
+    document.getElementById('graph').innerHTML = `
+      <div style="display: flex; align-items: center; justify-content: center; height: 100%; color: #e5e7eb; text-align: center; padding: 20px;">
+        <div>
+          <h2>🎲 Collection Overview</h2>
+          <p><strong>Successfully loaded ${nodes.length} games with ${edges.length} similarity connections!</strong></p>
+          <p>Cytoscape.js library needed for interactive graph. For now, browse your collection:</p>
+          <div style="margin-top: 20px;">
+            <button onclick="showGamesList()" style="
+              background: #22d3ee; 
+              color: #0f172a; 
+              border: none; 
+              padding: 10px 20px; 
+              border-radius: 6px; 
+              cursor: pointer;
+              font-weight: bold;
+              margin: 5px;
+            ">Show Games List</button>
+            <button onclick="showConnectionsGrid()" style="
+              background: #38bdf8; 
+              color: #0f172a; 
+              border: none; 
+              padding: 10px 20px; 
+              border-radius: 6px; 
+              cursor: pointer;
+              font-weight: bold;
+              margin: 5px;
+            ">Show Connections</button>
+          </div>
+          <div id="fallback-content" style="margin-top: 20px; max-height: 400px; overflow-y: auto;"></div>
+        </div>
+      </div>
+    `;
+    
+    // Store data globally for the fallback functions
+    window.fallbackData = { nodes, edges };
+    
+  } catch (error) {
+    document.getElementById('graph').innerHTML = `
+      <div style="display: flex; align-items: center; justify-content: center; height: 100%; color: #e5e7eb; text-align: center; padding: 20px;">
+        <div>
+          <h2>❌ Data Loading Error</h2>
+          <p>Could not load game data from ../docs/data/</p>
+          <p>Error: ${error.message}</p>
+        </div>
+      </div>
+    `;
+  }
+}
+
+function showGamesList() {
+  const { nodes } = window.fallbackData;
+  const content = document.getElementById('fallback-content');
+  content.innerHTML = `
+    <h3>Your Board Game Collection</h3>
+    <div style="text-align: left; max-width: 500px; margin: 0 auto;">
+      ${nodes.map(game => `
+        <div style="padding: 8px; margin: 4px 0; background: #111827; border-radius: 6px; border-left: 3px solid #22d3ee;">
+          <strong>${game.name}</strong><br>
+          <small style="color: #9ca3af;">
+            Rating: ${game.averagerating || 'N/A'} | 
+            Weight: ${game.averageweight || 'N/A'} | 
+            Players: ${game.minplayers || '?'}-${game.maxplayers || '?'}
+          </small>
+        </div>
+      `).join('')}
+    </div>
+  `;
+}
+
+function showConnectionsGrid() {
+  const { nodes, edges } = window.fallbackData;
+  const content = document.getElementById('fallback-content');
+  
+  // Create a map of game names
+  const gameNames = {};
+  nodes.forEach(n => gameNames[n.id] = n.name);
+  
+  content.innerHTML = `
+    <h3>Game Similarity Connections</h3>
+    <div style="text-align: left; max-width: 600px; margin: 0 auto;">
+      ${edges.map(edge => `
+        <div style="padding: 8px; margin: 4px 0; background: #111827; border-radius: 6px;">
+          <strong>${gameNames[edge.source]}</strong> ⟷ <strong>${gameNames[edge.target]}</strong><br>
+          <small style="color: #9ca3af;">Similarity: ${(edge.weight * 100).toFixed(1)}%</small>
+        </div>
+      `).join('')}
+    </div>
+  `;
+}
