@@ -8,8 +8,12 @@ __pycache__/
 *.pyc
 *.pyo
 
-# Data files (generated)
+# Data files (generated) - but allow docs/data for GitHub Pages
 data/
+
+# Allow GitHub Pages data files
+!docs/data/
+!docs/data/*.json
 
 # IDE files
 .vscode/
