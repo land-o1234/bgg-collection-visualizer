@@ -11,15 +11,22 @@ import xml.etree.ElementTree as ET
 log = logging.getLogger(__name__)
 
 BGG_API_BASE = "https://boardgamegeek.com/xmlapi2"
-RETRY_DELAY = 1.5  # seconds between retries
+RETRY_DELAY = 1.5  # initial delay between retries (exponential backoff)
 MAX_RETRIES = 3
+SEARCH_MAX_RETRIES = 5  # search endpoint needs more retries
+REQUEST_TIMEOUT = 60  # increased timeout for better reliability
 
 
-def _request_with_retry(url: str, params: Dict[str, Any] = None) -> Optional[ET.Element]:
-    """Make a request to BGG API with retry logic for rate limiting."""
-    for attempt in range(MAX_RETRIES):
+def _request_with_retry(url: str, params: Dict[str, Any] = None, max_retries: int = None) -> Optional[ET.Element]:
+    """Make a request to BGG API with retry logic for rate limiting and timeouts."""
+    if max_retries is None:
+        max_retries = MAX_RETRIES
+    
+    for attempt in range(max_retries):
+        delay = RETRY_DELAY * (2 ** attempt)  # exponential backoff
+        
         try:
-            response = requests.get(url, params=params, timeout=30)
+            response = requests.get(url, params=params, timeout=REQUEST_TIMEOUT)
             
             if response.status_code == 200:
                 # Parse XML
@@ -27,24 +34,34 @@ def _request_with_retry(url: str, params: Dict[str, Any] = None) -> Optional[ET.
                 return root
             elif response.status_code == 202:
                 # BGG returns 202 when data is being processed, retry after delay
-                log.info(f"BGG processing request, retrying in {RETRY_DELAY}s...")
-                time.sleep(RETRY_DELAY)
+                log.info(f"BGG processing request, retrying in {delay:.1f}s...")
+                time.sleep(delay)
                 continue
             else:
-                log.warning(f"BGG API returned status {response.status_code}, retrying...")
-                time.sleep(RETRY_DELAY)
+                log.warning(f"BGG API returned status {response.status_code}, retrying in {delay:.1f}s...")
+                time.sleep(delay)
                 continue
                 
+        except requests.exceptions.Timeout as e:
+            log.warning(f"Request timed out after {REQUEST_TIMEOUT}s (attempt {attempt + 1}/{max_retries}): {e}")
+            if attempt < max_retries - 1:
+                log.info(f"Retrying in {delay:.1f}s...")
+                time.sleep(delay)
+                continue
         except requests.RequestException as e:
-            log.warning(f"Request failed: {e}, retrying...")
-            time.sleep(RETRY_DELAY)
-            continue
+            log.warning(f"Request failed (attempt {attempt + 1}/{max_retries}): {e}")
+            if attempt < max_retries - 1:
+                log.info(f"Retrying in {delay:.1f}s...")
+                time.sleep(delay)
+                continue
         except ET.ParseError as e:
-            log.warning(f"XML parse failed: {e}, retrying...")
-            time.sleep(RETRY_DELAY)
-            continue
+            log.warning(f"XML parse failed (attempt {attempt + 1}/{max_retries}): {e}")
+            if attempt < max_retries - 1:
+                log.info(f"Retrying in {delay:.1f}s...")
+                time.sleep(delay)
+                continue
     
-    log.error(f"Failed to fetch from {url} after {MAX_RETRIES} attempts")
+    log.error(f"Failed to fetch from {url} after {max_retries} attempts")
     return None
 
 
@@ -248,6 +265,7 @@ def search_games(query: str, limit: int = 25) -> List[Dict[str, Any]]:
     """
     Search for games by name on BGG.
     Returns list of games with basic info.
+    Uses increased retry count since search endpoint is particularly slow.
     """
     log.info(f"Searching BGG for: {query}")
     
@@ -258,7 +276,8 @@ def search_games(query: str, limit: int = 25) -> List[Dict[str, Any]]:
         "exact": "0"
     }
     
-    root = _request_with_retry(url, params)
+    # Use increased retry count for search endpoint
+    root = _request_with_retry(url, params, max_retries=SEARCH_MAX_RETRIES)
     if root is None:
         return []
     
