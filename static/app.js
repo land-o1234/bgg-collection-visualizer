@@ -214,6 +214,9 @@ async function loadSimpleFallback() {
     // Store data globally for the fallback functions
     window.fallbackData = { nodes, edges };
     
+    // Enable search functionality
+    setupFallbackSearch();
+    
   } catch (error) {
     document.getElementById('graph').innerHTML = `
       <div style="display: flex; align-items: center; justify-content: center; height: 100%; color: #e5e7eb; text-align: center; padding: 20px;">
@@ -227,6 +230,91 @@ async function loadSimpleFallback() {
   }
 }
 
+function setupFallbackSearch() {
+  const searchInput = document.getElementById('search');
+  const searchResults = document.getElementById('search-results');
+  
+  if (!searchInput || !window.fallbackData) return;
+  
+  searchInput.addEventListener('input', (e) => {
+    const query = e.target.value.trim().toLowerCase();
+    
+    if (!query) {
+      searchResults.innerHTML = '';
+      return;
+    }
+    
+    const { nodes } = window.fallbackData;
+    const matches = nodes
+      .filter(game => game.name && game.name.toLowerCase().includes(query))
+      .slice(0, 8);
+    
+    searchResults.innerHTML = matches.map(game => `
+      <div onclick="showGameDetails('${game.id}')" style="
+        padding: 6px 8px; 
+        margin-top: 6px; 
+        border-radius: 6px; 
+        background: #0b1220; 
+        cursor: pointer;
+        border-left: 2px solid #22d3ee;
+      ">
+        <strong>${game.name}</strong><br>
+        <small style="color: #9ca3af;">
+          ${game.averagerating ? `★ ${parseFloat(game.averagerating).toFixed(1)}` : ''} | 
+          ${game.averageweight ? `⚖ ${parseFloat(game.averageweight).toFixed(1)}` : ''}
+        </small>
+      </div>
+    `).join('');
+  });
+}
+
+function showGameDetails(gameId) {
+  const { nodes, edges } = window.fallbackData;
+  const game = nodes.find(n => n.id === gameId);
+  
+  if (!game) return;
+  
+  // Update game title and meta
+  document.getElementById('game-title').textContent = game.name;
+  document.getElementById('meta').innerHTML = `
+    <p><strong>Rating:</strong> ${game.averagerating ? parseFloat(game.averagerating).toFixed(2) : 'N/A'}</p>
+    <p><strong>Complexity:</strong> ${game.averageweight ? parseFloat(game.averageweight).toFixed(2) : 'N/A'}</p>
+    <p><strong>Players:</strong> ${game.minplayers}-${game.maxplayers}</p>
+    <p><strong>Playing Time:</strong> ${game.playingtime || 'N/A'} min</p>
+    ${game.mechanics && game.mechanics.length ? `<p><strong>Mechanics:</strong> ${game.mechanics.slice(0, 3).join(', ')}</p>` : ''}
+  `;
+  
+  // Find similar games (connected by edges)
+  const similarGames = edges
+    .filter(edge => edge.source === gameId || edge.target === gameId)
+    .map(edge => {
+      const otherId = edge.source === gameId ? edge.target : edge.source;
+      const otherGame = nodes.find(n => n.id === otherId);
+      return { game: otherGame, similarity: edge.weight };
+    })
+    .sort((a, b) => b.similarity - a.similarity);
+  
+  document.getElementById('neighbors').innerHTML = similarGames.length > 0 
+    ? similarGames.map(({ game, similarity }) => `
+        <div onclick="showGameDetails('${game.id}')" style="
+          padding: 6px 8px; 
+          margin: 4px 0; 
+          background: #0b1220; 
+          border-radius: 6px; 
+          cursor: pointer;
+          border-left: 2px solid #38bdf8;
+        ">
+          <strong>${game.name}</strong><br>
+          <small style="color: #9ca3af;">Similarity: ${(similarity * 100).toFixed(1)}%</small>
+        </div>
+      `).join('')
+    : '<em>No similar games found</em>';
+  
+  // Clear search
+  document.getElementById('search').value = '';
+  document.getElementById('search-results').innerHTML = '';
+}
+
 function showGamesList() {
   const { nodes } = window.fallbackData;
   const content = document.getElementById('fallback-content');
@@ -234,7 +322,14 @@ function showGamesList() {
     <h3>Your Board Game Collection</h3>
     <div style="text-align: left; max-width: 500px; margin: 0 auto;">
       ${nodes.map(game => `
-        <div style="padding: 8px; margin: 4px 0; background: #111827; border-radius: 6px; border-left: 3px solid #22d3ee;">
+        <div onclick="showGameDetails('${game.id}')" style="
+          padding: 8px; 
+          margin: 4px 0; 
+          background: #111827; 
+          border-radius: 6px; 
+          border-left: 3px solid #22d3ee;
+          cursor: pointer;
+        ">
           <strong>${game.name}</strong><br>
           <small style="color: #9ca3af;">
             Rating: ${game.averagerating || 'N/A'} | 
@@ -260,7 +355,21 @@ function showConnectionsGrid() {
     <div style="text-align: left; max-width: 600px; margin: 0 auto;">
       ${edges.map(edge => `
         <div style="padding: 8px; margin: 4px 0; background: #111827; border-radius: 6px;">
-          <strong>${gameNames[edge.source]}</strong> ⟷ <strong>${gameNames[edge.target]}</strong><br>
+          <div>
+            <span onclick="showGameDetails('${edge.source}')" style="
+              cursor: pointer; 
+              color: #22d3ee; 
+              text-decoration: underline;
+              font-weight: bold;
+            ">${gameNames[edge.source]}</span> 
+            ⟷ 
+            <span onclick="showGameDetails('${edge.target}')" style="
+              cursor: pointer; 
+              color: #22d3ee; 
+              text-decoration: underline;
+              font-weight: bold;
+            ">${gameNames[edge.target]}</span>
+          </div>
           <small style="color: #9ca3af;">Similarity: ${(edge.weight * 100).toFixed(1)}%</small>
         </div>
       `).join('')}

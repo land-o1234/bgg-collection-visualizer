@@ -6,7 +6,12 @@ This is a static web app that visualizes your BoardGameGeek (BGG) collection as 
 - Data: Precomputed JSON (`docs/data/nodes.json`, `docs/data/edges.json`, `docs/data/recs.json`) built by a Python script using the BGG XML API.
 
 ## Features
-- Interactive graph (pan, zoom, drag)
+- Interactive graph (pan, zoom, drag) when Cytoscape.js is available
+- **Fallback Mode**: When external CDN is blocked, provides:
+  - Complete games list with ratings and complexity
+  - Similarity connections view with percentages
+  - Working search functionality
+  - Click-to-navigate between games and similar games
 - Click a game to see:
   - Mechanics, categories, rating, weight, players, playtime
   - Directly related games (graph neighbors) with similarity edge weights
