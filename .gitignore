@@ -10,7 +10,6 @@ __pycache__/
 
 # Data files (generated)
 data/
-docs/data/
 
 # IDE files
 .vscode/
