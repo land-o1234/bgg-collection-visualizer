@@ -1,0 +1,18 @@
+{
+  "1": [
+    {
+      "id": "999",
+      "name": "Recommended Game 1",
+      "score": 0.7,
+      "bggUrl": "https://boardgamegeek.com/boardgame/999"
+    }
+  ],
+  "2": [
+    {
+      "id": "998", 
+      "name": "Recommended Game 2",
+      "score": 0.6,
+      "bggUrl": "https://boardgamegeek.com/boardgame/998"
+    }
+  ]
+}
