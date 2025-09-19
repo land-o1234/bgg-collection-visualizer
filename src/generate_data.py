@@ -18,7 +18,11 @@ def main():
     parser.add_argument("--out-dir", default="data", help="Output directory for JSON files")
     parser.add_argument("--skip-recs", action="store_true", help="Skip generating recommendations")
     parser.add_argument("--rec-search-terms", nargs="+", 
-                       default=["strategy", "euro", "engine building", "worker placement", "deck building"],
+                       default=["strategy", "euro", "engine building", "worker placement", "deck building", 
+                               "area control", "tile placement", "hand management", "set collection", 
+                               "resource management", "tableau building", "simultaneous action selection",
+                               "cooperative", "legacy", "dexterity", "party game", "abstract strategy",
+                               "war game", "economic", "negotiation", "racing", "adventure", "thematic"],
                        help="Search terms for finding recommendation candidates")
     args = parser.parse_args()
 
@@ -98,8 +102,8 @@ def main():
 
 def generate_recommendations(owned_games: Dict[str, Dict[str, Any]], 
                            search_terms: List[str],
-                           candidates_per_term: int = 15,
-                           max_candidates: int = 100) -> Dict[str, List[Dict[str, Any]]]:
+                           candidates_per_term: int = 25,
+                           max_candidates: int = 200) -> Dict[str, List[Dict[str, Any]]]:
     """
     Generate game recommendations by searching for candidates and computing similarities.
     """
@@ -141,7 +145,7 @@ def generate_recommendations(owned_games: Dict[str, Dict[str, Any]],
         candidate_details = get_things(list(candidate_games.keys()))
         
         # Compute cross-similarities between owned games and candidates
-        recommendations = compute_cross_similarities(owned_games, candidate_details, top_k=5)
+        recommendations = compute_cross_similarities(owned_games, candidate_details, top_k=8)
         
         return recommendations
     else:
