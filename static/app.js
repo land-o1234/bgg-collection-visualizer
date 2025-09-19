@@ -164,5 +164,215 @@ async function main() {
 
 main().catch(err => {
   console.error(err);
-  alert("Failed to load data. Make sure ../data/nodes.json and ../data/edges.json exist.");
+  // Check if it's a cytoscape issue
+  if (err.message && err.message.includes('cytoscape is not defined')) {
+    loadSimpleFallback();
+  } else {
+    alert("Failed to load data. Make sure ../docs/data/nodes.json and ../docs/data/edges.json exist.");
+  }
 });
+
+// Simple fallback when Cytoscape.js is not available
+async function loadSimpleFallback() {
+  try {
+    const nodes = await loadJSON("../docs/data/nodes.json");
+    const edges = await loadJSON("../docs/data/edges.json");
+    
+    document.getElementById('graph').innerHTML = `
+      <div style="display: flex; align-items: center; justify-content: center; height: 100%; color: #e5e7eb; text-align: center; padding: 20px;">
+        <div>
+          <h2>🎲 Collection Overview</h2>
+          <p><strong>Successfully loaded ${nodes.length} games with ${edges.length} similarity connections!</strong></p>
+          <p>Cytoscape.js library needed for interactive graph. For now, browse your collection:</p>
+          <div style="margin-top: 20px;">
+            <button onclick="showGamesList()" style="
+              background: #22d3ee; 
+              color: #0f172a; 
+              border: none; 
+              padding: 10px 20px; 
+              border-radius: 6px; 
+              cursor: pointer;
+              font-weight: bold;
+              margin: 5px;
+            ">Show Games List</button>
+            <button onclick="showConnectionsGrid()" style="
+              background: #38bdf8; 
+              color: #0f172a; 
+              border: none; 
+              padding: 10px 20px; 
+              border-radius: 6px; 
+              cursor: pointer;
+              font-weight: bold;
+              margin: 5px;
+            ">Show Connections</button>
+          </div>
+          <div id="fallback-content" style="margin-top: 20px; max-height: 400px; overflow-y: auto;"></div>
+        </div>
+      </div>
+    `;
+    
+    // Store data globally for the fallback functions
+    window.fallbackData = { nodes, edges };
+    
+    // Enable search functionality
+    setupFallbackSearch();
+    
+  } catch (error) {
+    document.getElementById('graph').innerHTML = `
+      <div style="display: flex; align-items: center; justify-content: center; height: 100%; color: #e5e7eb; text-align: center; padding: 20px;">
+        <div>
+          <h2>❌ Data Loading Error</h2>
+          <p>Could not load game data from ../docs/data/</p>
+          <p>Error: ${error.message}</p>
+        </div>
+      </div>
+    `;
+  }
+}
+
+function setupFallbackSearch() {
+  const searchInput = document.getElementById('search');
+  const searchResults = document.getElementById('search-results');
+  
+  if (!searchInput || !window.fallbackData) return;
+  
+  searchInput.addEventListener('input', (e) => {
+    const query = e.target.value.trim().toLowerCase();
+    
+    if (!query) {
+      searchResults.innerHTML = '';
+      return;
+    }
+    
+    const { nodes } = window.fallbackData;
+    const matches = nodes
+      .filter(game => game.name && game.name.toLowerCase().includes(query))
+      .slice(0, 8);
+    
+    searchResults.innerHTML = matches.map(game => `
+      <div onclick="showGameDetails('${game.id}')" style="
+        padding: 6px 8px; 
+        margin-top: 6px; 
+        border-radius: 6px; 
+        background: #0b1220; 
+        cursor: pointer;
+        border-left: 2px solid #22d3ee;
+      ">
+        <strong>${game.name}</strong><br>
+        <small style="color: #9ca3af;">
+          ${game.averagerating ? `★ ${parseFloat(game.averagerating).toFixed(1)}` : ''} | 
+          ${game.averageweight ? `⚖ ${parseFloat(game.averageweight).toFixed(1)}` : ''}
+        </small>
+      </div>
+    `).join('');
+  });
+}
+
+function showGameDetails(gameId) {
+  const { nodes, edges } = window.fallbackData;
+  const game = nodes.find(n => n.id === gameId);
+  
+  if (!game) return;
+  
+  // Update game title and meta
+  document.getElementById('game-title').textContent = game.name;
+  document.getElementById('meta').innerHTML = `
+    <p><strong>Rating:</strong> ${game.averagerating ? parseFloat(game.averagerating).toFixed(2) : 'N/A'}</p>
+    <p><strong>Complexity:</strong> ${game.averageweight ? parseFloat(game.averageweight).toFixed(2) : 'N/A'}</p>
+    <p><strong>Players:</strong> ${game.minplayers}-${game.maxplayers}</p>
+    <p><strong>Playing Time:</strong> ${game.playingtime || 'N/A'} min</p>
+    ${game.mechanics && game.mechanics.length ? `<p><strong>Mechanics:</strong> ${game.mechanics.slice(0, 3).join(', ')}</p>` : ''}
+  `;
+  
+  // Find similar games (connected by edges)
+  const similarGames = edges
+    .filter(edge => edge.source === gameId || edge.target === gameId)
+    .map(edge => {
+      const otherId = edge.source === gameId ? edge.target : edge.source;
+      const otherGame = nodes.find(n => n.id === otherId);
+      return { game: otherGame, similarity: edge.weight };
+    })
+    .sort((a, b) => b.similarity - a.similarity);
+  
+  document.getElementById('neighbors').innerHTML = similarGames.length > 0 
+    ? similarGames.map(({ game, similarity }) => `
+        <div onclick="showGameDetails('${game.id}')" style="
+          padding: 6px 8px; 
+          margin: 4px 0; 
+          background: #0b1220; 
+          border-radius: 6px; 
+          cursor: pointer;
+          border-left: 2px solid #38bdf8;
+        ">
+          <strong>${game.name}</strong><br>
+          <small style="color: #9ca3af;">Similarity: ${(similarity * 100).toFixed(1)}%</small>
+        </div>
+      `).join('')
+    : '<em>No similar games found</em>';
+  
+  // Clear search
+  document.getElementById('search').value = '';
+  document.getElementById('search-results').innerHTML = '';
+}
+
+function showGamesList() {
+  const { nodes } = window.fallbackData;
+  const content = document.getElementById('fallback-content');
+  content.innerHTML = `
+    <h3>Your Board Game Collection</h3>
+    <div style="text-align: left; max-width: 500px; margin: 0 auto;">
+      ${nodes.map(game => `
+        <div onclick="showGameDetails('${game.id}')" style="
+          padding: 8px; 
+          margin: 4px 0; 
+          background: #111827; 
+          border-radius: 6px; 
+          border-left: 3px solid #22d3ee;
+          cursor: pointer;
+        ">
+          <strong>${game.name}</strong><br>
+          <small style="color: #9ca3af;">
+            Rating: ${game.averagerating || 'N/A'} | 
+            Weight: ${game.averageweight || 'N/A'} | 
+            Players: ${game.minplayers || '?'}-${game.maxplayers || '?'}
+          </small>
+        </div>
+      `).join('')}
+    </div>
+  `;
+}
+
+function showConnectionsGrid() {
+  const { nodes, edges } = window.fallbackData;
+  const content = document.getElementById('fallback-content');
+  
+  // Create a map of game names
+  const gameNames = {};
+  nodes.forEach(n => gameNames[n.id] = n.name);
+  
+  content.innerHTML = `
+    <h3>Game Similarity Connections</h3>
+    <div style="text-align: left; max-width: 600px; margin: 0 auto;">
+      ${edges.map(edge => `
+        <div style="padding: 8px; margin: 4px 0; background: #111827; border-radius: 6px;">
+          <div>
+            <span onclick="showGameDetails('${edge.source}')" style="
+              cursor: pointer; 
+              color: #22d3ee; 
+              text-decoration: underline;
+              font-weight: bold;
+            ">${gameNames[edge.source]}</span> 
+            ⟷ 
+            <span onclick="showGameDetails('${edge.target}')" style="
+              cursor: pointer; 
+              color: #22d3ee; 
+              text-decoration: underline;
+              font-weight: bold;
+            ">${gameNames[edge.target]}</span>
+          </div>
+          <small style="color: #9ca3af;">Similarity: ${(edge.weight * 100).toFixed(1)}%</small>
+        </div>
+      `).join('')}
+    </div>
+  `;
+}

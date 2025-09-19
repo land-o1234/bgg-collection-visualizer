@@ -5,6 +5,9 @@
   <title>Board Game Collection Visualizer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="./style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.29.2/cytoscape.min.js"></script>
+  <!-- Fallback: if you have cytoscape.min.js locally, uncomment the line below and comment the CDN line -->
+  <!-- <script src="./cytoscape.min.js"></script> -->
 </head>
 <body>
   <div id="sidebar">
@@ -13,71 +16,26 @@
       <div id="search-results"></div>
     </div>
     <div id="details" class="section">
-      <h2 id="game-title">BGG Collection Visualizer</h2>
+      <h2 id="game-title">Select a game to see details</h2>
       <div id="meta">
-        <p>This is a demonstration of the BoardGameGeek Collection Visualizer.</p>
-        <p><strong>Features implemented:</strong></p>
-        <ul>
-          <li>✅ BGG XML API client with retry logic</li>
-          <li>✅ Game similarity computation (Jaccard + Cosine)</li>
-          <li>✅ Recommendation system via search candidates</li>
-          <li>✅ JSON data generation (nodes, edges, recommendations)</li>
-          <li>✅ GitHub Actions workflow for automation</li>
-          <li>✅ Static web app with interactive graph</li>
-        </ul>
-        <p><strong>Note:</strong> The interactive graph requires Cytoscape.js which is blocked in this environment. The full functionality would work when deployed with the library available.</p>
+        <p>Click on a node in the graph to see game information, similar games, and recommendations.</p>
       </div>
       <div id="lists">
-        <h3>Sample Data Generated</h3>
+        <h3>Similar Games</h3>
         <div id="neighbors">
-          <p>8 board games with calculated similarity connections</p>
-          <p>9 edges representing game relationships</p>
-          <p>Personalized recommendations for each game</p>
+          <em>Click a game to see its neighbors</em>
         </div>
-        <h3>Implementation Status</h3>
+        <h3>Recommendations</h3>
         <div id="recs">
-          <p>All core functionality has been successfully implemented and is ready for deployment.</p>
+          <em>Click a game to see recommendations</em>
         </div>
       </div>
     </div>
   </div>
   <div id="graph">
-    <div style="display: flex; align-items: center; justify-content: center; height: 100%; color: #e5e7eb; text-align: center; padding: 20px;">
-      <div>
-        <h2>Interactive Graph Preview</h2>
-        <p>The BGG Collection Visualizer is fully implemented with:</p>
-        <ul style="text-align: left; display: inline-block;">
-          <li>Python BGG API client (works with real BGG data)</li>
-          <li>Similarity computation algorithms</li>
-          <li>Recommendation generation system</li>
-          <li>Cytoscape.js graph visualization</li>
-          <li>Search and filtering capabilities</li>
-          <li>GitHub Actions automation</li>
-        </ul>
-        <p><em>Demo data has been generated and is ready for visualization</em></p>
-      </div>
-    </div>
+    <!-- Cytoscape.js graph will be rendered here -->
   </div>
 
-  <script>
-    // Demo functionality without external dependencies
-    document.getElementById('search').addEventListener('input', function(e) {
-      const query = e.target.value.toLowerCase();
-      const results = document.getElementById('search-results');
-      
-      if (query.length === 0) {
-        results.innerHTML = '';
-        return;
-      }
-      
-      // Sample games for demo
-      const games = ['Wingspan', 'Terraforming Mars', 'Scythe', 'Gaia Project', 'Agricola'];
-      const matches = games.filter(game => game.toLowerCase().includes(query));
-      
-      results.innerHTML = matches.map(game => 
-        `<div style="padding: 6px 8px; margin-top: 6px; border-radius: 6px; background: #0b1220; cursor: pointer;">${game}</div>`
-      ).join('');
-    });
-  </script>
+  <script src="./app.js"></script>
 </body>
 </html>
