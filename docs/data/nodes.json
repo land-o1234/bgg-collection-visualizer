@@ -1,28 +1,1330 @@
 [
   {
-    "id": "1",
-    "label": "Test Game 1",
-    "name": "Test Game 1",
-    "mechanics": ["Worker Placement"],
-    "categories": ["Strategy"],
-    "averageweight": 3.5,
-    "averagerating": 7.8,
-    "playingtime": 90,
-    "minplayers": 2,
-    "maxplayers": 4,
-    "bggUrl": "https://boardgamegeek.com/boardgame/1"
+    "id": "205637",
+    "label": "Arkham Horror: The Card Game",
+    "name": "Arkham Horror: The Card Game",
+    "mechanics": [
+      "Action Points",
+      "Area Movement",
+      "Communication Limits",
+      "Cooperative Game",
+      "Deck Construction",
+      "Events",
+      "Hand Management",
+      "Map Deformation",
+      "Modular Board",
+      "Player Elimination",
+      "Push Your Luck",
+      "Role Playing",
+      "Scenario / Mission / Campaign Game",
+      "Solo / Solitaire Game",
+      "Stat Check Resolution",
+      "Variable Player Powers"
+    ],
+    "categories": [
+      "Adventure",
+      "Card Game",
+      "Collectible Components",
+      "Exploration",
+      "Horror",
+      "Novel-based"
+    ],
+    "averageweight": 3.563,
+    "averagerating": 8.12612,
+    "playingtime": 120,
+    "minplayers": 1,
+    "maxplayers": 2,
+    "bggUrl": "https://boardgamegeek.com/boardgame/205637"
   },
   {
-    "id": "2",
-    "label": "Test Game 2", 
-    "name": "Test Game 2",
-    "mechanics": ["Engine Building"],
-    "categories": ["Strategy"],
-    "averageweight": 2.8,
-    "averagerating": 8.1,
+    "id": "61692",
+    "label": "Axis & Allies: Europe 1940",
+    "name": "Axis & Allies: Europe 1940",
+    "mechanics": [
+      "Area Majority / Influence",
+      "Area Movement",
+      "Dice Rolling",
+      "Team-Based Game"
+    ],
+    "categories": [
+      "Economic",
+      "Wargame",
+      "World War II"
+    ],
+    "averageweight": 3.4901,
+    "averagerating": 7.57213,
+    "playingtime": 360,
+    "minplayers": 2,
+    "maxplayers": 6,
+    "bggUrl": "https://boardgamegeek.com/boardgame/61692"
+  },
+  {
+    "id": "55829",
+    "label": "Axis & Allies: Pacific 1940",
+    "name": "Axis & Allies: Pacific 1940",
+    "mechanics": [
+      "Area Majority / Influence",
+      "Area Movement",
+      "Dice Rolling",
+      "Simulation",
+      "Team-Based Game"
+    ],
+    "categories": [
+      "Economic",
+      "Fighting",
+      "Wargame",
+      "World War II"
+    ],
+    "averageweight": 3.5704,
+    "averagerating": 7.52593,
+    "playingtime": 360,
+    "minplayers": 2,
+    "maxplayers": 4,
+    "bggUrl": "https://boardgamegeek.com/boardgame/55829"
+  },
+  {
+    "id": "255360",
+    "label": "Bargain Basement Bathysphere",
+    "name": "Bargain Basement Bathysphere",
+    "mechanics": [
+      "Dice Rolling",
+      "Paper-and-Pencil",
+      "Push Your Luck",
+      "Solo / Solitaire Game"
+    ],
+    "categories": [
+      "Exploration",
+      "Nautical",
+      "Print & Play"
+    ],
+    "averageweight": 2.15,
+    "averagerating": 7.21899,
+    "playingtime": 15,
+    "minplayers": 1,
+    "maxplayers": 1,
+    "bggUrl": "https://boardgamegeek.com/boardgame/255360"
+  },
+  {
+    "id": "339532",
+    "label": "Battlecrest: Fellwoods Base Game",
+    "name": "Battlecrest: Fellwoods Base Game",
+    "mechanics": [
+      "Grid Movement",
+      "Hand Management",
+      "Modular Board",
+      "Scenario / Mission / Campaign Game",
+      "Square Grid",
+      "Variable Player Powers"
+    ],
+    "categories": [
+      "Card Game",
+      "Fighting",
+      "Print & Play",
+      "Science Fiction"
+    ],
+    "averageweight": 2.6667,
+    "averagerating": 7.14835,
+    "playingtime": 20,
+    "minplayers": 2,
+    "maxplayers": 2,
+    "bggUrl": "https://boardgamegeek.com/boardgame/339532"
+  },
+  {
+    "id": "295947",
+    "label": "Cascadia",
+    "name": "Cascadia",
+    "mechanics": [
+      "End Game Bonuses",
+      "Hexagon Grid",
+      "Open Drafting",
+      "Pattern Building",
+      "Solo / Solitaire Game",
+      "Tile Placement",
+      "Variable Set-up"
+    ],
+    "categories": [
+      "Animals",
+      "Environmental"
+    ],
+    "averageweight": 1.8501,
+    "averagerating": 7.90987,
+    "playingtime": 45,
+    "minplayers": 1,
+    "maxplayers": 4,
+    "bggUrl": "https://boardgamegeek.com/boardgame/295947"
+  },
+  {
+    "id": "359970",
+    "label": "Challengers!",
+    "name": "Challengers!",
+    "mechanics": [
+      "Deck Construction",
+      "Deck, Bag, and Pool Building",
+      "Finale Ending",
+      "Hand Management",
+      "Open Drafting"
+    ],
+    "categories": [
+      "Animals",
+      "Card Game",
+      "Sports"
+    ],
+    "averageweight": 1.808,
+    "averagerating": 7.07485,
+    "playingtime": 45,
+    "minplayers": 1,
+    "maxplayers": 8,
+    "bggUrl": "https://boardgamegeek.com/boardgame/359970"
+  },
+  {
+    "id": "411403",
+    "label": "Danger Danger",
+    "name": "Danger Danger",
+    "mechanics": [
+      "Real-Time"
+    ],
+    "categories": [
+      "Card Game"
+    ],
+    "averageweight": 1.2,
+    "averagerating": 6.87315,
+    "playingtime": 10,
+    "minplayers": 2,
+    "maxplayers": 8,
+    "bggUrl": "https://boardgamegeek.com/boardgame/411403"
+  },
+  {
+    "id": "381356",
+    "label": "Diced Veggies",
+    "name": "Diced Veggies",
+    "mechanics": [
+      "Contracts",
+      "Dice Rolling",
+      "Hand Management",
+      "Open Drafting",
+      "Set Collection",
+      "Solo / Solitaire Game",
+      "Tags"
+    ],
+    "categories": [
+      "Dice"
+    ],
+    "averageweight": 1.4,
+    "averagerating": 6.96038,
+    "playingtime": 30,
+    "minplayers": 2,
+    "maxplayers": 4,
+    "bggUrl": "https://boardgamegeek.com/boardgame/381356"
+  },
+  {
+    "id": "256382",
+    "label": "Disney Villainous: The Worst Takes it All",
+    "name": "Disney Villainous: The Worst Takes it All",
+    "mechanics": [
+      "Hand Management",
+      "Take That",
+      "Variable Player Powers"
+    ],
+    "categories": [
+      "Card Game",
+      "Fantasy",
+      "Medieval",
+      "Movies / TV / Radio theme",
+      "Mythology",
+      "Novel-based",
+      "Pirates"
+    ],
+    "averageweight": 2.4906,
+    "averagerating": 6.92437,
+    "playingtime": 120,
+    "minplayers": 2,
+    "maxplayers": 6,
+    "bggUrl": "https://boardgamegeek.com/boardgame/256382"
+  },
+  {
+    "id": "343282",
+    "label": "Exploding Kittens: Recipes for Disaster",
+    "name": "Exploding Kittens: Recipes for Disaster",
+    "mechanics": [
+      "Hand Management",
+      "Hot Potato",
+      "Player Elimination",
+      "Push Your Luck"
+    ],
+    "categories": [
+      "Card Game",
+      "Humor",
+      "Party Game"
+    ],
+    "averageweight": 1.3158,
+    "averagerating": 7.07886,
+    "playingtime": 15,
+    "minplayers": 2,
+    "maxplayers": 5,
+    "bggUrl": "https://boardgamegeek.com/boardgame/343282"
+  },
+  {
+    "id": "3181",
+    "label": "Farkle",
+    "name": "Farkle",
+    "mechanics": [
+      "Dice Rolling",
+      "Paper-and-Pencil",
+      "Push Your Luck",
+      "Re-rolling and Locking",
+      "Set Collection"
+    ],
+    "categories": [
+      "Dice"
+    ],
+    "averageweight": 1.1118,
+    "averagerating": 5.67378,
+    "playingtime": 30,
+    "minplayers": 2,
+    "maxplayers": 6,
+    "bggUrl": "https://boardgamegeek.com/boardgame/3181"
+  },
+  {
+    "id": "436126",
+    "label": "Finspan",
+    "name": "Finspan",
+    "mechanics": [
+      "End Game Bonuses",
+      "Hand Management",
+      "Once-Per-Game Abilities",
+      "Solo / Solitaire Game",
+      "Tags"
+    ],
+    "categories": [
+      "Animals",
+      "Card Game"
+    ],
+    "averageweight": 2.3423,
+    "averagerating": 7.72276,
     "playingtime": 60,
     "minplayers": 1,
     "maxplayers": 5,
-    "bggUrl": "https://boardgamegeek.com/boardgame/2"
+    "bggUrl": "https://boardgamegeek.com/boardgame/436126"
+  },
+  {
+    "id": "424991",
+    "label": "Garden Variety",
+    "name": "Garden Variety",
+    "mechanics": [
+      "Dice Rolling",
+      "Ladder Climbing"
+    ],
+    "categories": [
+      "Card Game"
+    ],
+    "averageweight": 1.0,
+    "averagerating": 6.23343,
+    "playingtime": 15,
+    "minplayers": 2,
+    "maxplayers": 5,
+    "bggUrl": "https://boardgamegeek.com/boardgame/424991"
+  },
+  {
+    "id": "329812",
+    "label": "Genius Star",
+    "name": "Genius Star",
+    "mechanics": [
+      "Pattern Building",
+      "Real-Time"
+    ],
+    "categories": [
+      "Puzzle",
+      "Real-time"
+    ],
+    "averageweight": 1.6667,
+    "averagerating": 7.1659,
+    "playingtime": 0,
+    "minplayers": 1,
+    "maxplayers": 2,
+    "bggUrl": "https://boardgamegeek.com/boardgame/329812"
+  },
+  {
+    "id": "444187",
+    "label": "Geomandering",
+    "name": "Geomandering",
+    "mechanics": [
+      "Area Majority / Influence",
+      "Drawing",
+      "Solo / Solitaire Game",
+      "Worker Placement"
+    ],
+    "categories": [
+      "Dice",
+      "Print & Play"
+    ],
+    "averageweight": 0.0,
+    "averagerating": 5.56667,
+    "playingtime": 90,
+    "minplayers": 1,
+    "maxplayers": 3,
+    "bggUrl": "https://boardgamegeek.com/boardgame/444187"
+  },
+  {
+    "id": "174430",
+    "label": "Gloomhaven",
+    "name": "Gloomhaven",
+    "mechanics": [
+      "Action Queue",
+      "Action Retrieval",
+      "Campaign / Battle Card Driven",
+      "Card Play Conflict Resolution",
+      "Communication Limits",
+      "Cooperative Game",
+      "Critical Hits and Failures",
+      "Deck Construction",
+      "Grid Movement",
+      "Hand Management",
+      "Hexagon Grid",
+      "Legacy Game",
+      "Line of Sight",
+      "Modular Board",
+      "Multi-Use Cards",
+      "Narrative Choice / Paragraph",
+      "Once-Per-Game Abilities",
+      "Role Playing",
+      "Scenario / Mission / Campaign Game",
+      "Simultaneous Action Selection",
+      "Solo / Solitaire Game",
+      "Storytelling",
+      "Tags",
+      "Variable Player Powers"
+    ],
+    "categories": [
+      "Adventure",
+      "Exploration",
+      "Fantasy",
+      "Fighting",
+      "Miniatures"
+    ],
+    "averageweight": 3.9148,
+    "averagerating": 8.55547,
+    "playingtime": 120,
+    "minplayers": 1,
+    "maxplayers": 4,
+    "bggUrl": "https://boardgamegeek.com/boardgame/174430"
+  },
+  {
+    "id": "291457",
+    "label": "Gloomhaven: Jaws of the Lion",
+    "name": "Gloomhaven: Jaws of the Lion",
+    "mechanics": [
+      "Action Queue",
+      "Action Retrieval",
+      "Campaign / Battle Card Driven",
+      "Communication Limits",
+      "Cooperative Game",
+      "Critical Hits and Failures",
+      "Deck Construction",
+      "Grid Movement",
+      "Hand Management",
+      "Hexagon Grid",
+      "Legacy Game",
+      "Line of Sight",
+      "Multi-Use Cards",
+      "Once-Per-Game Abilities",
+      "Player Elimination",
+      "Role Playing",
+      "Scenario / Mission / Campaign Game",
+      "Simultaneous Action Selection",
+      "Solo / Solitaire Game",
+      "Variable Player Powers"
+    ],
+    "categories": [
+      "Adventure",
+      "Exploration",
+      "Fantasy",
+      "Fighting",
+      "Miniatures"
+    ],
+    "averageweight": 3.6349,
+    "averagerating": 8.38007,
+    "playingtime": 120,
+    "minplayers": 1,
+    "maxplayers": 4,
+    "bggUrl": "https://boardgamegeek.com/boardgame/291457"
+  },
+  {
+    "id": "327392",
+    "label": "Gnoming A Round",
+    "name": "Gnoming A Round",
+    "mechanics": [
+      "Open Drafting",
+      "Set Collection"
+    ],
+    "categories": [
+      "Card Game"
+    ],
+    "averageweight": 1.2,
+    "averagerating": 6.57679,
+    "playingtime": 30,
+    "minplayers": 2,
+    "maxplayers": 7,
+    "bggUrl": "https://boardgamegeek.com/boardgame/327392"
+  },
+  {
+    "id": "356909",
+    "label": "Hand-to-Hand Wombat",
+    "name": "Hand-to-Hand Wombat",
+    "mechanics": [
+      "Action Timer",
+      "Hidden Roles",
+      "Real-Time",
+      "Team-Based Game"
+    ],
+    "categories": [
+      "Action / Dexterity",
+      "Party Game"
+    ],
+    "averageweight": 1.1579,
+    "averagerating": 6.22928,
+    "playingtime": 15,
+    "minplayers": 3,
+    "maxplayers": 6,
+    "bggUrl": "https://boardgamegeek.com/boardgame/356909"
+  },
+  {
+    "id": "426523",
+    "label": "HYVE",
+    "name": "HYVE",
+    "mechanics": [
+      "Dice Rolling",
+      "Paper-and-Pencil",
+      "Re-rolling and Locking",
+      "Solo / Solitaire Game"
+    ],
+    "categories": [
+      "Abstract Strategy",
+      "Dice",
+      "Print & Play",
+      "Puzzle"
+    ],
+    "averageweight": 2.0,
+    "averagerating": 7.86087,
+    "playingtime": 90,
+    "minplayers": 1,
+    "maxplayers": 2,
+    "bggUrl": "https://boardgamegeek.com/boardgame/426523"
+  },
+  {
+    "id": "423729",
+    "label": "Let's Hit Each Other with Fake Swords",
+    "name": "Let's Hit Each Other with Fake Swords",
+    "mechanics": [
+      "Set Collection"
+    ],
+    "categories": [
+      "Action / Dexterity",
+      "Party Game"
+    ],
+    "averageweight": 1.0,
+    "averagerating": 5.92688,
+    "playingtime": 15,
+    "minplayers": 3,
+    "maxplayers": 6,
+    "bggUrl": "https://boardgamegeek.com/boardgame/423729"
+  },
+  {
+    "id": "436217",
+    "label": "The Lord of the Rings: Fate of the Fellowship",
+    "name": "The Lord of the Rings: Fate of the Fellowship",
+    "mechanics": [
+      "Action Points",
+      "Cooperative Game",
+      "Dice Rolling",
+      "Hand Management",
+      "Solo / Solitaire Game",
+      "Variable Player Powers"
+    ],
+    "categories": [
+      "Fantasy",
+      "Novel-based"
+    ],
+    "averageweight": 2.9742,
+    "averagerating": 8.24553,
+    "playingtime": 150,
+    "minplayers": 1,
+    "maxplayers": 5,
+    "bggUrl": "https://boardgamegeek.com/boardgame/436217"
+  },
+  {
+    "id": "358690",
+    "label": "MANTIS",
+    "name": "MANTIS",
+    "mechanics": [
+      "Hand Management",
+      "Push Your Luck",
+      "Set Collection",
+      "Take That"
+    ],
+    "categories": [
+      "Card Game"
+    ],
+    "averageweight": 1.0556,
+    "averagerating": 6.64521,
+    "playingtime": 10,
+    "minplayers": 2,
+    "maxplayers": 6,
+    "bggUrl": "https://boardgamegeek.com/boardgame/358690"
+  },
+  {
+    "id": "285774",
+    "label": "Marvel Champions: The Card Game",
+    "name": "Marvel Champions: The Card Game",
+    "mechanics": [
+      "Card Play Conflict Resolution",
+      "Cooperative Game",
+      "Deck Construction",
+      "Hand Management",
+      "Interrupts",
+      "Scenario / Mission / Campaign Game",
+      "Solo / Solitaire Game",
+      "Turn Order: Progressive",
+      "Variable Player Powers",
+      "Variable Set-up"
+    ],
+    "categories": [
+      "Card Game",
+      "Collectible Components",
+      "Comic Book / Strip",
+      "Fighting"
+    ],
+    "averageweight": 2.9473,
+    "averagerating": 8.11068,
+    "playingtime": 90,
+    "minplayers": 1,
+    "maxplayers": 4,
+    "bggUrl": "https://boardgamegeek.com/boardgame/285774"
+  },
+  {
+    "id": "430081",
+    "label": "Metus",
+    "name": "Metus",
+    "mechanics": [
+      "Action Drafting",
+      "Area Majority / Influence",
+      "Modular Board",
+      "Paper-and-Pencil",
+      "Solo / Solitaire Game"
+    ],
+    "categories": [
+      "Abstract Strategy",
+      "Civil War",
+      "Print & Play",
+      "Wargame"
+    ],
+    "averageweight": 3.0,
+    "averagerating": 7.7,
+    "playingtime": 60,
+    "minplayers": 1,
+    "maxplayers": 2,
+    "bggUrl": "https://boardgamegeek.com/boardgame/430081"
+  },
+  {
+    "id": "124708",
+    "label": "Mice and Mystics",
+    "name": "Mice and Mystics",
+    "mechanics": [
+      "Area Movement",
+      "Cooperative Game",
+      "Dice Rolling",
+      "Multiple Maps",
+      "Role Playing",
+      "Scenario / Mission / Campaign Game",
+      "Storytelling",
+      "Variable Player Powers"
+    ],
+    "categories": [
+      "Adventure",
+      "Animals",
+      "Exploration",
+      "Fantasy",
+      "Fighting",
+      "Miniatures"
+    ],
+    "averageweight": 2.7332,
+    "averagerating": 7.21128,
+    "playingtime": 90,
+    "minplayers": 1,
+    "maxplayers": 4,
+    "bggUrl": "https://boardgamegeek.com/boardgame/124708"
+  },
+  {
+    "id": "327297",
+    "label": "Monopoly: Super Electronic Banking",
+    "name": "Monopoly: Super Electronic Banking",
+    "mechanics": [],
+    "categories": [
+      "Economic"
+    ],
+    "averageweight": 0.0,
+    "averagerating": 5.575,
+    "playingtime": 0,
+    "minplayers": 2,
+    "maxplayers": 4,
+    "bggUrl": "https://boardgamegeek.com/boardgame/327297"
+  },
+  {
+    "id": "436587",
+    "label": "Moonlight",
+    "name": "Moonlight",
+    "mechanics": [
+      "Grid Coverage",
+      "Paper-and-Pencil",
+      "Roll / Spin and Move",
+      "Square Grid",
+      "Storytelling"
+    ],
+    "categories": [
+      "Comic Book / Strip",
+      "Print & Play"
+    ],
+    "averageweight": 0.0,
+    "averagerating": 6.73333,
+    "playingtime": 60,
+    "minplayers": 1,
+    "maxplayers": 1,
+    "bggUrl": "https://boardgamegeek.com/boardgame/436587"
+  },
+  {
+    "id": "355438",
+    "label": "Murder Mystery Party Case Files: Mile High Murder",
+    "name": "Murder Mystery Party Case Files: Mile High Murder",
+    "mechanics": [
+      "Cooperative Game",
+      "Deduction"
+    ],
+    "categories": [
+      "Deduction",
+      "Murder / Mystery",
+      "Puzzle"
+    ],
+    "averageweight": 2.5,
+    "averagerating": 5.04762,
+    "playingtime": 0,
+    "minplayers": 1,
+    "maxplayers": 99,
+    "bggUrl": "https://boardgamegeek.com/boardgame/355438"
+  },
+  {
+    "id": "303057",
+    "label": "Pan Am",
+    "name": "Pan Am",
+    "mechanics": [
+      "Auction / Bidding",
+      "Auction: Fixed Placement",
+      "Connections",
+      "Constrained Bidding",
+      "Dice Rolling",
+      "Events",
+      "Income",
+      "Investment",
+      "Stock Holding",
+      "Turn Order: Claim Action",
+      "Turn Order: Progressive",
+      "Worker Placement"
+    ],
+    "categories": [
+      "Aviation / Flight",
+      "Economic",
+      "Transportation"
+    ],
+    "averageweight": 2.4149,
+    "averagerating": 7.53373,
+    "playingtime": 60,
+    "minplayers": 2,
+    "maxplayers": 4,
+    "bggUrl": "https://boardgamegeek.com/boardgame/303057"
+  },
+  {
+    "id": "30549",
+    "label": "Pandemic",
+    "name": "Pandemic",
+    "mechanics": [
+      "Action Points",
+      "Chaining",
+      "Contracts",
+      "Cooperative Game",
+      "Events",
+      "Hand Management",
+      "Multi-Use Cards",
+      "Point to Point Movement",
+      "Set Collection",
+      "Simulation",
+      "Tags",
+      "Trading",
+      "Variable Player Powers",
+      "Variable Set-up"
+    ],
+    "categories": [
+      "Medical",
+      "Travel"
+    ],
+    "averageweight": 2.3959,
+    "averagerating": 7.52077,
+    "playingtime": 45,
+    "minplayers": 2,
+    "maxplayers": 4,
+    "bggUrl": "https://boardgamegeek.com/boardgame/30549"
+  },
+  {
+    "id": "314040",
+    "label": "Pandemic Legacy: Season 0",
+    "name": "Pandemic Legacy: Season 0",
+    "mechanics": [
+      "Action Points",
+      "Cooperative Game",
+      "Hand Management",
+      "Legacy Game",
+      "Point to Point Movement",
+      "Scenario / Mission / Campaign Game",
+      "Set Collection",
+      "Tags",
+      "Trading",
+      "Variable Player Powers"
+    ],
+    "categories": [
+      "Medical",
+      "Spies / Secret Agents"
+    ],
+    "averageweight": 3.1714,
+    "averagerating": 8.35326,
+    "playingtime": 60,
+    "minplayers": 2,
+    "maxplayers": 4,
+    "bggUrl": "https://boardgamegeek.com/boardgame/314040"
+  },
+  {
+    "id": "161936",
+    "label": "Pandemic Legacy: Season 1",
+    "name": "Pandemic Legacy: Season 1",
+    "mechanics": [
+      "Action Points",
+      "Cooperative Game",
+      "Hand Management",
+      "Legacy Game",
+      "Multi-Use Cards",
+      "Point to Point Movement",
+      "Scenario / Mission / Campaign Game",
+      "Set Collection",
+      "Tags",
+      "Trading",
+      "Variable Player Powers"
+    ],
+    "categories": [
+      "Environmental",
+      "Medical"
+    ],
+    "averageweight": 2.8289,
+    "averagerating": 8.51023,
+    "playingtime": 60,
+    "minplayers": 2,
+    "maxplayers": 4,
+    "bggUrl": "https://boardgamegeek.com/boardgame/161936"
+  },
+  {
+    "id": "150658",
+    "label": "Pandemic: The Cure",
+    "name": "Pandemic: The Cure",
+    "mechanics": [
+      "Cooperative Game",
+      "Dice Rolling",
+      "Hand Management",
+      "Point to Point Movement",
+      "Push Your Luck",
+      "Re-rolling and Locking",
+      "Set Collection",
+      "Solo / Solitaire Game",
+      "Tags",
+      "Variable Player Powers"
+    ],
+    "categories": [
+      "Dice",
+      "Environmental",
+      "Medical"
+    ],
+    "averageweight": 2.0619,
+    "averagerating": 7.23572,
+    "playingtime": 30,
+    "minplayers": 2,
+    "maxplayers": 5,
+    "bggUrl": "https://boardgamegeek.com/boardgame/150658"
+  },
+  {
+    "id": "312786",
+    "label": "Poetry for Neanderthals",
+    "name": "Poetry for Neanderthals",
+    "mechanics": [
+      "Communication Limits",
+      "Real-Time",
+      "Team-Based Game"
+    ],
+    "categories": [
+      "Humor",
+      "Party Game",
+      "Prehistoric",
+      "Real-time",
+      "Word Game"
+    ],
+    "averageweight": 1.122,
+    "averagerating": 6.65476,
+    "playingtime": 15,
+    "minplayers": 2,
+    "maxplayers": 12,
+    "bggUrl": "https://boardgamegeek.com/boardgame/312786"
+  },
+  {
+    "id": "411404",
+    "label": "Power Hungry Pets",
+    "name": "Power Hungry Pets",
+    "mechanics": [
+      "Player Elimination"
+    ],
+    "categories": [
+      "Card Game"
+    ],
+    "averageweight": 1.1818,
+    "averagerating": 6.98529,
+    "playingtime": 15,
+    "minplayers": 2,
+    "maxplayers": 6,
+    "bggUrl": "https://boardgamegeek.com/boardgame/411404"
+  },
+  {
+    "id": "248267",
+    "label": "Rank Card Game",
+    "name": "Rank Card Game",
+    "mechanics": [
+      "Trick-taking"
+    ],
+    "categories": [
+      "Card Game"
+    ],
+    "averageweight": 1.0,
+    "averagerating": 6.13929,
+    "playingtime": 60,
+    "minplayers": 3,
+    "maxplayers": 6,
+    "bggUrl": "https://boardgamegeek.com/boardgame/248267"
+  },
+  {
+    "id": "444335",
+    "label": "Rise of the Oak Dell",
+    "name": "Rise of the Oak Dell",
+    "mechanics": [
+      "Dice Rolling",
+      "Drawing",
+      "Paper-and-Pencil",
+      "Solo / Solitaire Game",
+      "Variable Player Powers",
+      "Worker Placement with Dice Workers"
+    ],
+    "categories": [
+      "Dice",
+      "Print & Play",
+      "Video Game Theme"
+    ],
+    "averageweight": 3.0,
+    "averagerating": 7.16757,
+    "playingtime": 60,
+    "minplayers": 1,
+    "maxplayers": 100,
+    "bggUrl": "https://boardgamegeek.com/boardgame/444335"
+  },
+  {
+    "id": "446049",
+    "label": "Rolling Pirates",
+    "name": "Rolling Pirates",
+    "mechanics": [
+      "Dice Rolling",
+      "Map Addition",
+      "Paper-and-Pencil"
+    ],
+    "categories": [
+      "Dice",
+      "Exploration",
+      "Pirates",
+      "Print & Play"
+    ],
+    "averageweight": 2.5,
+    "averagerating": 7.5,
+    "playingtime": 45,
+    "minplayers": 1,
+    "maxplayers": 99,
+    "bggUrl": "https://boardgamegeek.com/boardgame/446049"
+  },
+  {
+    "id": "232830",
+    "label": "Shifty Eyed Spies",
+    "name": "Shifty Eyed Spies",
+    "mechanics": [
+      "Acting",
+      "Targeted Clues",
+      "Team-Based Game"
+    ],
+    "categories": [
+      "Bluffing",
+      "Party Game",
+      "Spies / Secret Agents"
+    ],
+    "averageweight": 1.1765,
+    "averagerating": 6.72422,
+    "playingtime": 20,
+    "minplayers": 4,
+    "maxplayers": 8,
+    "bggUrl": "https://boardgamegeek.com/boardgame/232830"
+  },
+  {
+    "id": "1269",
+    "label": "Skip-Bo",
+    "name": "Skip-Bo",
+    "mechanics": [
+      "Hand Management"
+    ],
+    "categories": [
+      "Card Game"
+    ],
+    "averageweight": 1.1969,
+    "averagerating": 5.6334,
+    "playingtime": 20,
+    "minplayers": 2,
+    "maxplayers": 6,
+    "bggUrl": "https://boardgamegeek.com/boardgame/1269"
+  },
+  {
+    "id": "162886",
+    "label": "Spirit Island",
+    "name": "Spirit Island",
+    "mechanics": [
+      "Action Retrieval",
+      "Area Majority / Influence",
+      "Automatic Resource Growth",
+      "Campaign / Battle Card Driven",
+      "Cooperative Game",
+      "Deck, Bag, and Pool Building",
+      "Hand Management",
+      "Modular Board",
+      "Simultaneous Action Selection",
+      "Solo / Solitaire Game",
+      "Tags",
+      "Variable Player Powers",
+      "Variable Set-up"
+    ],
+    "categories": [
+      "Environmental",
+      "Fantasy",
+      "Mythology",
+      "Territory Building"
+    ],
+    "averageweight": 4.0772,
+    "averagerating": 8.3401,
+    "playingtime": 120,
+    "minplayers": 1,
+    "maxplayers": 4,
+    "bggUrl": "https://boardgamegeek.com/boardgame/162886"
+  },
+  {
+    "id": "164153",
+    "label": "Star Wars: Imperial Assault",
+    "name": "Star Wars: Imperial Assault",
+    "mechanics": [
+      "Dice Rolling",
+      "Die Icon Resolution",
+      "Grid Movement",
+      "Line of Sight",
+      "Modular Board",
+      "Role Playing",
+      "Scenario / Mission / Campaign Game",
+      "Solo / Solitaire Game",
+      "Square Grid",
+      "Team-Based Game",
+      "Variable Player Powers"
+    ],
+    "categories": [
+      "Adventure",
+      "Exploration",
+      "Fighting",
+      "Miniatures",
+      "Movies / TV / Radio theme",
+      "Science Fiction",
+      "Wargame"
+    ],
+    "averageweight": 3.3004,
+    "averagerating": 7.95776,
+    "playingtime": 120,
+    "minplayers": 2,
+    "maxplayers": 5,
+    "bggUrl": "https://boardgamegeek.com/boardgame/164153"
+  },
+  {
+    "id": "374173",
+    "label": "Star Wars: The Deckbuilding Game",
+    "name": "Star Wars: The Deckbuilding Game",
+    "mechanics": [
+      "Deck, Bag, and Pool Building",
+      "Open Drafting",
+      "Tug of War"
+    ],
+    "categories": [
+      "Card Game",
+      "Fighting",
+      "Movies / TV / Radio theme",
+      "Science Fiction"
+    ],
+    "averageweight": 2.0357,
+    "averagerating": 7.83209,
+    "playingtime": 90,
+    "minplayers": 2,
+    "maxplayers": 2,
+    "bggUrl": "https://boardgamegeek.com/boardgame/374173"
+  },
+  {
+    "id": "103885",
+    "label": "Star Wars: X-Wing Miniatures Game",
+    "name": "Star Wars: X-Wing Miniatures Game",
+    "mechanics": [
+      "Action Queue",
+      "Critical Hits and Failures",
+      "Dice Rolling",
+      "Line of Sight",
+      "Movement Template",
+      "Player Elimination",
+      "Simulation",
+      "Simultaneous Action Selection",
+      "Variable Player Powers"
+    ],
+    "categories": [
+      "Aviation / Flight",
+      "Bluffing",
+      "Collectible Components",
+      "Miniatures",
+      "Movies / TV / Radio theme",
+      "Science Fiction",
+      "Wargame"
+    ],
+    "averageweight": 2.4957,
+    "averagerating": 7.62598,
+    "playingtime": 45,
+    "minplayers": 2,
+    "maxplayers": 2,
+    "bggUrl": "https://boardgamegeek.com/boardgame/103885"
+  },
+  {
+    "id": "123260",
+    "label": "Suburbia",
+    "name": "Suburbia",
+    "mechanics": [
+      "Auction: Dutch",
+      "Catch the Leader",
+      "End Game Bonuses",
+      "Hexagon Grid",
+      "Income",
+      "Open Drafting",
+      "Set Collection",
+      "Solo / Solitaire Game",
+      "Tile Placement"
+    ],
+    "categories": [
+      "City Building",
+      "Economic"
+    ],
+    "averageweight": 2.7589,
+    "averagerating": 7.46306,
+    "playingtime": 90,
+    "minplayers": 1,
+    "maxplayers": 4,
+    "bggUrl": "https://boardgamegeek.com/boardgame/123260"
+  },
+  {
+    "id": "249816",
+    "label": "Taco vs Burrito",
+    "name": "Taco vs Burrito",
+    "mechanics": [
+      "Take That"
+    ],
+    "categories": [
+      "Card Game"
+    ],
+    "averageweight": 1.0,
+    "averagerating": 5.12195,
+    "playingtime": 45,
+    "minplayers": 2,
+    "maxplayers": 4,
+    "bggUrl": "https://boardgamegeek.com/boardgame/249816"
+  },
+  {
+    "id": "333373",
+    "label": "Tacocat Spelled Backwards",
+    "name": "Tacocat Spelled Backwards",
+    "mechanics": [
+      "Map Reduction",
+      "Tug of War",
+      "Turn Order: Claim Action"
+    ],
+    "categories": [
+      "Card Game"
+    ],
+    "averageweight": 1.2222,
+    "averagerating": 6.28763,
+    "playingtime": 20,
+    "minplayers": 2,
+    "maxplayers": 2,
+    "bggUrl": "https://boardgamegeek.com/boardgame/333373"
+  },
+  {
+    "id": "46213",
+    "label": "Telestrations",
+    "name": "Telestrations",
+    "mechanics": [
+      "Drawing",
+      "Paper-and-Pencil"
+    ],
+    "categories": [
+      "Humor",
+      "Party Game",
+      "Real-time"
+    ],
+    "averageweight": 1.0707,
+    "averagerating": 7.37702,
+    "playingtime": 30,
+    "minplayers": 4,
+    "maxplayers": 8,
+    "bggUrl": "https://boardgamegeek.com/boardgame/46213"
+  },
+  {
+    "id": "410382",
+    "label": "That Escalated Quickly",
+    "name": "That Escalated Quickly",
+    "mechanics": [
+      "Cooperative Game"
+    ],
+    "categories": [
+      "Deduction",
+      "Humor",
+      "Party Game"
+    ],
+    "averageweight": 1.125,
+    "averagerating": 7.04914,
+    "playingtime": 15,
+    "minplayers": 2,
+    "maxplayers": 8,
+    "bggUrl": "https://boardgamegeek.com/boardgame/410382"
+  },
+  {
+    "id": "8944",
+    "label": "Triple Yahtzee",
+    "name": "Triple Yahtzee",
+    "mechanics": [
+      "Dice Rolling",
+      "Paper-and-Pencil"
+    ],
+    "categories": [
+      "Dice"
+    ],
+    "averageweight": 1.5429,
+    "averagerating": 5.95332,
+    "playingtime": 45,
+    "minplayers": 1,
+    "maxplayers": 10,
+    "bggUrl": "https://boardgamegeek.com/boardgame/8944"
+  },
+  {
+    "id": "2223",
+    "label": "UNO",
+    "name": "UNO",
+    "mechanics": [
+      "Hand Management",
+      "Lose a Turn",
+      "Matching",
+      "Take That"
+    ],
+    "categories": [
+      "Card Game",
+      "Children's Game",
+      "Comic Book / Strip",
+      "Movies / TV / Radio theme",
+      "Number"
+    ],
+    "averageweight": 1.1018,
+    "averagerating": 5.47275,
+    "playingtime": 30,
+    "minplayers": 2,
+    "maxplayers": 10,
+    "bggUrl": "https://boardgamegeek.com/boardgame/2223"
+  },
+  {
+    "id": "266192",
+    "label": "Wingspan",
+    "name": "Wingspan",
+    "mechanics": [
+      "Action Queue",
+      "Dice Rolling",
+      "End Game Bonuses",
+      "Hand Management",
+      "Once-Per-Game Abilities",
+      "Open Drafting",
+      "Set Collection",
+      "Solo / Solitaire Game",
+      "Turn Order: Progressive"
+    ],
+    "categories": [
+      "Animals",
+      "Card Game",
+      "Educational"
+    ],
+    "averageweight": 2.4739,
+    "averagerating": 8.01208,
+    "playingtime": 70,
+    "minplayers": 1,
+    "maxplayers": 5,
+    "bggUrl": "https://boardgamegeek.com/boardgame/266192"
+  },
+  {
+    "id": "358621",
+    "label": "The Worst-Case Scenario Card Game",
+    "name": "The Worst-Case Scenario Card Game",
+    "mechanics": [
+      "Voting"
+    ],
+    "categories": [
+      "Card Game",
+      "Party Game"
+    ],
+    "averageweight": 1.25,
+    "averagerating": 5.72983,
+    "playingtime": 90,
+    "minplayers": 3,
+    "maxplayers": 6,
+    "bggUrl": "https://boardgamegeek.com/boardgame/358621"
+  },
+  {
+    "id": "2243",
+    "label": "Yahtzee",
+    "name": "Yahtzee",
+    "mechanics": [
+      "Dice Rolling",
+      "Paper-and-Pencil",
+      "Push Your Luck",
+      "Re-rolling and Locking",
+      "Set Collection"
+    ],
+    "categories": [
+      "Children's Game",
+      "Comic Book / Strip",
+      "Dice",
+      "Movies / TV / Radio theme",
+      "Music",
+      "Travel"
+    ],
+    "averageweight": 1.1742,
+    "averagerating": 5.53347,
+    "playingtime": 30,
+    "minplayers": 2,
+    "maxplayers": 10,
+    "bggUrl": "https://boardgamegeek.com/boardgame/2243"
   }
 ]

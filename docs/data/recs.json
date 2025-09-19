@@ -1,18 +1,1794 @@
 {
-  "1": [
+  "205637": [
     {
-      "id": "999",
-      "name": "Recommended Game 1",
-      "score": 0.7,
-      "bggUrl": "https://boardgamegeek.com/boardgame/999"
+      "id": "299104",
+      "name": "Apex Theropod Deck Building Game: Collected Edition",
+      "score": 0.2526529023747352,
+      "bggUrl": "https://boardgamegeek.com/boardgame/299104"
+    },
+    {
+      "id": "27848",
+      "name": "Age of Conan: The Strategy Board Game",
+      "score": 0.2263932535744137,
+      "bggUrl": "https://boardgamegeek.com/boardgame/27848"
+    },
+    {
+      "id": "156266",
+      "name": "Apex Theropod Deck-Building Game",
+      "score": 0.21238728638040677,
+      "bggUrl": "https://boardgamegeek.com/boardgame/156266"
+    },
+    {
+      "id": "299790",
+      "name": "Advanced Salvo! European Theater: Tactical WWII Naval Combat Game",
+      "score": 0.19612092365271974,
+      "bggUrl": "https://boardgamegeek.com/boardgame/299790"
+    },
+    {
+      "id": "175707",
+      "name": "Apex Theropod Deck-Building Game: Exotic Predators Limited Edition",
+      "score": 0.19408950552992488,
+      "bggUrl": "https://boardgamegeek.com/boardgame/175707"
     }
   ],
-  "2": [
+  "61692": [
     {
-      "id": "998", 
-      "name": "Recommended Game 2",
-      "score": 0.6,
-      "bggUrl": "https://boardgamegeek.com/boardgame/998"
+      "id": "32086",
+      "name": "1939-45 Harc Európáért",
+      "score": 0.5985811223494906,
+      "bggUrl": "https://boardgamegeek.com/boardgame/32086"
+    },
+    {
+      "id": "9135",
+      "name": "Advanced European Theater of Operations",
+      "score": 0.4589471477431932,
+      "bggUrl": "https://boardgamegeek.com/boardgame/9135"
+    },
+    {
+      "id": "41614",
+      "name": "Advanced European Theater of Operations: Africa Orientale Italiana",
+      "score": 0.4278138188997183,
+      "bggUrl": "https://boardgamegeek.com/boardgame/41614"
+    },
+    {
+      "id": "143745",
+      "name": "2WW: The War in Europe",
+      "score": 0.41077698939564944,
+      "bggUrl": "https://boardgamegeek.com/boardgame/143745"
+    },
+    {
+      "id": "146144",
+      "name": "AEGIS: Combining Robot Strategy Game",
+      "score": 0.32825377013253026,
+      "bggUrl": "https://boardgamegeek.com/boardgame/146144"
+    }
+  ],
+  "55829": [
+    {
+      "id": "32086",
+      "name": "1939-45 Harc Európáért",
+      "score": 0.6487164317890961,
+      "bggUrl": "https://boardgamegeek.com/boardgame/32086"
+    },
+    {
+      "id": "9135",
+      "name": "Advanced European Theater of Operations",
+      "score": 0.4928683632003138,
+      "bggUrl": "https://boardgamegeek.com/boardgame/9135"
+    },
+    {
+      "id": "41614",
+      "name": "Advanced European Theater of Operations: Africa Orientale Italiana",
+      "score": 0.48132151901106257,
+      "bggUrl": "https://boardgamegeek.com/boardgame/41614"
+    },
+    {
+      "id": "143745",
+      "name": "2WW: The War in Europe",
+      "score": 0.3514318628315177,
+      "bggUrl": "https://boardgamegeek.com/boardgame/143745"
+    },
+    {
+      "id": "188573",
+      "name": "1WW: World War One in Europe",
+      "score": 0.30244424969378425,
+      "bggUrl": "https://boardgamegeek.com/boardgame/188573"
+    }
+  ],
+  "255360": [
+    {
+      "id": "299790",
+      "name": "Advanced Salvo! European Theater: Tactical WWII Naval Combat Game",
+      "score": 0.4061065353163976,
+      "bggUrl": "https://boardgamegeek.com/boardgame/299790"
+    },
+    {
+      "id": "299104",
+      "name": "Apex Theropod Deck Building Game: Collected Edition",
+      "score": 0.21523609705183822,
+      "bggUrl": "https://boardgamegeek.com/boardgame/299104"
+    },
+    {
+      "id": "317048",
+      "name": "18WE: Western Europe",
+      "score": 0.14060725301952276,
+      "bggUrl": "https://boardgamegeek.com/boardgame/317048"
+    },
+    {
+      "id": "2861",
+      "name": "Aquitaine: Strategy and the Medieval War Ride",
+      "score": 0.13397233109295062,
+      "bggUrl": "https://boardgamegeek.com/boardgame/2861"
+    },
+    {
+      "id": "156266",
+      "name": "Apex Theropod Deck-Building Game",
+      "score": 0.1335010352887666,
+      "bggUrl": "https://boardgamegeek.com/boardgame/156266"
+    }
+  ],
+  "339532": [
+    {
+      "id": "24733",
+      "name": "Munchkin Promotional Bookmarks",
+      "score": 0.25756425331476773,
+      "bggUrl": "https://boardgamegeek.com/boardgame/24733"
+    },
+    {
+      "id": "146144",
+      "name": "AEGIS: Combining Robot Strategy Game",
+      "score": 0.24015519495849325,
+      "bggUrl": "https://boardgamegeek.com/boardgame/146144"
+    },
+    {
+      "id": "27848",
+      "name": "Age of Conan: The Strategy Board Game",
+      "score": 0.21913991497693597,
+      "bggUrl": "https://boardgamegeek.com/boardgame/27848"
+    },
+    {
+      "id": "155177",
+      "name": "Worker Placement: Cash Is King",
+      "score": 0.2019987499910597,
+      "bggUrl": "https://boardgamegeek.com/boardgame/155177"
+    },
+    {
+      "id": "5867",
+      "name": "10 Days in Europe",
+      "score": 0.16455986876447382,
+      "bggUrl": "https://boardgamegeek.com/boardgame/5867"
+    }
+  ],
+  "295947": [
+    {
+      "id": "299104",
+      "name": "Apex Theropod Deck Building Game: Collected Edition",
+      "score": 0.23601029365525145,
+      "bggUrl": "https://boardgamegeek.com/boardgame/299104"
+    },
+    {
+      "id": "299790",
+      "name": "Advanced Salvo! European Theater: Tactical WWII Naval Combat Game",
+      "score": 0.1921219285564153,
+      "bggUrl": "https://boardgamegeek.com/boardgame/299790"
+    },
+    {
+      "id": "200174",
+      "name": "Apex Theropod Deck-Building Game: Exotic Predators Expansion Deck",
+      "score": 0.17853822219256543,
+      "bggUrl": "https://boardgamegeek.com/boardgame/200174"
+    },
+    {
+      "id": "202307",
+      "name": "Apex Theropod Deck-Building Game: The Stomping Dead Expansion Deck",
+      "score": 0.1681268668549643,
+      "bggUrl": "https://boardgamegeek.com/boardgame/202307"
+    },
+    {
+      "id": "334948",
+      "name": "18EE/82 Eastern Europe",
+      "score": 0.16233723910830294,
+      "bggUrl": "https://boardgamegeek.com/boardgame/334948"
+    }
+  ],
+  "359970": [
+    {
+      "id": "200174",
+      "name": "Apex Theropod Deck-Building Game: Exotic Predators Expansion Deck",
+      "score": 0.3889448378258299,
+      "bggUrl": "https://boardgamegeek.com/boardgame/200174"
+    },
+    {
+      "id": "202307",
+      "name": "Apex Theropod Deck-Building Game: The Stomping Dead Expansion Deck",
+      "score": 0.3690439815642656,
+      "bggUrl": "https://boardgamegeek.com/boardgame/202307"
+    },
+    {
+      "id": "366930",
+      "name": "Animo: Cross Trainers – Stagnetic Strategy Deck",
+      "score": 0.2700914362156427,
+      "bggUrl": "https://boardgamegeek.com/boardgame/366930"
+    },
+    {
+      "id": "302705",
+      "name": "Apex Theropod Deck-Building Game: Exotic Predators Expansion Deck",
+      "score": 0.2648195575998553,
+      "bggUrl": "https://boardgamegeek.com/boardgame/302705"
+    },
+    {
+      "id": "367026",
+      "name": "Animo: Cross Trainers – Draylight Strategy Deck",
+      "score": 0.2629485790727855,
+      "bggUrl": "https://boardgamegeek.com/boardgame/367026"
+    }
+  ],
+  "411403": [
+    {
+      "id": "366930",
+      "name": "Animo: Cross Trainers – Stagnetic Strategy Deck",
+      "score": 0.21381447618104726,
+      "bggUrl": "https://boardgamegeek.com/boardgame/366930"
+    },
+    {
+      "id": "367046",
+      "name": "Animo: Red Letter Day – Percy Strategy Deck",
+      "score": 0.20523024824260225,
+      "bggUrl": "https://boardgamegeek.com/boardgame/367046"
+    },
+    {
+      "id": "367026",
+      "name": "Animo: Cross Trainers – Draylight Strategy Deck",
+      "score": 0.19881447618104725,
+      "bggUrl": "https://boardgamegeek.com/boardgame/367026"
+    },
+    {
+      "id": "368274",
+      "name": "Animo: Red Letter Day – Treashell Strategy Deck",
+      "score": 0.19881447618104725,
+      "bggUrl": "https://boardgamegeek.com/boardgame/368274"
+    },
+    {
+      "id": "368744",
+      "name": "Arms Race Chess",
+      "score": 0.15134842126978584,
+      "bggUrl": "https://boardgamegeek.com/boardgame/368744"
+    }
+  ],
+  "381356": [
+    {
+      "id": "24733",
+      "name": "Munchkin Promotional Bookmarks",
+      "score": 0.25944567147321146,
+      "bggUrl": "https://boardgamegeek.com/boardgame/24733"
+    },
+    {
+      "id": "148099",
+      "name": "Worker Placement",
+      "score": 0.2188892032835714,
+      "bggUrl": "https://boardgamegeek.com/boardgame/148099"
+    },
+    {
+      "id": "367046",
+      "name": "Animo: Red Letter Day – Percy Strategy Deck",
+      "score": 0.19803426522693313,
+      "bggUrl": "https://boardgamegeek.com/boardgame/367046"
+    },
+    {
+      "id": "259420",
+      "name": "A.E.G.I.S.: Combining Robot Strategy Game – Variant Command Expansion",
+      "score": 0.19688108815273275,
+      "bggUrl": "https://boardgamegeek.com/boardgame/259420"
+    },
+    {
+      "id": "367026",
+      "name": "Animo: Cross Trainers – Draylight Strategy Deck",
+      "score": 0.19257402822991063,
+      "bggUrl": "https://boardgamegeek.com/boardgame/367026"
+    }
+  ],
+  "256382": [
+    {
+      "id": "24733",
+      "name": "Munchkin Promotional Bookmarks",
+      "score": 0.3592614541570295,
+      "bggUrl": "https://boardgamegeek.com/boardgame/24733"
+    },
+    {
+      "id": "2275",
+      "name": "Airlines",
+      "score": 0.29343445651257116,
+      "bggUrl": "https://boardgamegeek.com/boardgame/2275"
+    },
+    {
+      "id": "27848",
+      "name": "Age of Conan: The Strategy Board Game",
+      "score": 0.2845900262619725,
+      "bggUrl": "https://boardgamegeek.com/boardgame/27848"
+    },
+    {
+      "id": "155177",
+      "name": "Worker Placement: Cash Is King",
+      "score": 0.21976343837206047,
+      "bggUrl": "https://boardgamegeek.com/boardgame/155177"
+    },
+    {
+      "id": "143745",
+      "name": "2WW: The War in Europe",
+      "score": 0.17687391837841152,
+      "bggUrl": "https://boardgamegeek.com/boardgame/143745"
+    }
+  ],
+  "343282": [
+    {
+      "id": "366930",
+      "name": "Animo: Cross Trainers – Stagnetic Strategy Deck",
+      "score": 0.29388093834775225,
+      "bggUrl": "https://boardgamegeek.com/boardgame/366930"
+    },
+    {
+      "id": "367046",
+      "name": "Animo: Red Letter Day – Percy Strategy Deck",
+      "score": 0.2919609564442176,
+      "bggUrl": "https://boardgamegeek.com/boardgame/367046"
+    },
+    {
+      "id": "367026",
+      "name": "Animo: Cross Trainers – Draylight Strategy Deck",
+      "score": 0.2867380812048951,
+      "bggUrl": "https://boardgamegeek.com/boardgame/367026"
+    },
+    {
+      "id": "368274",
+      "name": "Animo: Red Letter Day – Treashell Strategy Deck",
+      "score": 0.2867380812048951,
+      "bggUrl": "https://boardgamegeek.com/boardgame/368274"
+    },
+    {
+      "id": "321239",
+      "name": "Ambush!: A Fast-Paced Game of Strategy and Sacrifice",
+      "score": 0.24868932653119882,
+      "bggUrl": "https://boardgamegeek.com/boardgame/321239"
+    }
+  ],
+  "3181": [
+    {
+      "id": "259420",
+      "name": "A.E.G.I.S.: Combining Robot Strategy Game – Variant Command Expansion",
+      "score": 0.22198361569974812,
+      "bggUrl": "https://boardgamegeek.com/boardgame/259420"
+    },
+    {
+      "id": "2861",
+      "name": "Aquitaine: Strategy and the Medieval War Ride",
+      "score": 0.2190076959184296,
+      "bggUrl": "https://boardgamegeek.com/boardgame/2861"
+    },
+    {
+      "id": "306721",
+      "name": "A.E.G.I.S.: Combining Robot Strategy Game – Ell Gel Ion Promo Card",
+      "score": 0.2134122040107269,
+      "bggUrl": "https://boardgamegeek.com/boardgame/306721"
+    },
+    {
+      "id": "299565",
+      "name": "1676: Mad Dogs & Englishmen – Rules for Including Magic, Special Characters, Fell Beasts, & Europeans in 1676 Games",
+      "score": 0.209687870447608,
+      "bggUrl": "https://boardgamegeek.com/boardgame/299565"
+    },
+    {
+      "id": "148099",
+      "name": "Worker Placement",
+      "score": 0.18884373853054312,
+      "bggUrl": "https://boardgamegeek.com/boardgame/148099"
+    }
+  ],
+  "436126": [
+    {
+      "id": "299104",
+      "name": "Apex Theropod Deck Building Game: Collected Edition",
+      "score": 0.4111984201311347,
+      "bggUrl": "https://boardgamegeek.com/boardgame/299104"
+    },
+    {
+      "id": "156266",
+      "name": "Apex Theropod Deck-Building Game",
+      "score": 0.34317344916311326,
+      "bggUrl": "https://boardgamegeek.com/boardgame/156266"
+    },
+    {
+      "id": "175707",
+      "name": "Apex Theropod Deck-Building Game: Exotic Predators Limited Edition",
+      "score": 0.33918031048245145,
+      "bggUrl": "https://boardgamegeek.com/boardgame/175707"
+    },
+    {
+      "id": "200174",
+      "name": "Apex Theropod Deck-Building Game: Exotic Predators Expansion Deck",
+      "score": 0.27915230489986653,
+      "bggUrl": "https://boardgamegeek.com/boardgame/200174"
+    },
+    {
+      "id": "202307",
+      "name": "Apex Theropod Deck-Building Game: The Stomping Dead Expansion Deck",
+      "score": 0.24884158175982338,
+      "bggUrl": "https://boardgamegeek.com/boardgame/202307"
+    }
+  ],
+  "424991": [
+    {
+      "id": "2861",
+      "name": "Aquitaine: Strategy and the Medieval War Ride",
+      "score": 0.26031668129416285,
+      "bggUrl": "https://boardgamegeek.com/boardgame/2861"
+    },
+    {
+      "id": "299565",
+      "name": "1676: Mad Dogs & Englishmen – Rules for Including Magic, Special Characters, Fell Beasts, & Europeans in 1676 Games",
+      "score": 0.24279713728974056,
+      "bggUrl": "https://boardgamegeek.com/boardgame/299565"
+    },
+    {
+      "id": "24733",
+      "name": "Munchkin Promotional Bookmarks",
+      "score": 0.21575224228273027,
+      "bggUrl": "https://boardgamegeek.com/boardgame/24733"
+    },
+    {
+      "id": "366930",
+      "name": "Animo: Cross Trainers – Stagnetic Strategy Deck",
+      "score": 0.19172452176953625,
+      "bggUrl": "https://boardgamegeek.com/boardgame/366930"
+    },
+    {
+      "id": "367046",
+      "name": "Animo: Red Letter Day – Percy Strategy Deck",
+      "score": 0.18605210880366124,
+      "bggUrl": "https://boardgamegeek.com/boardgame/367046"
+    }
+  ],
+  "329812": [
+    {
+      "id": "202307",
+      "name": "Apex Theropod Deck-Building Game: The Stomping Dead Expansion Deck",
+      "score": 0.15113740421499317,
+      "bggUrl": "https://boardgamegeek.com/boardgame/202307"
+    },
+    {
+      "id": "200174",
+      "name": "Apex Theropod Deck-Building Game: Exotic Predators Expansion Deck",
+      "score": 0.1510844813702752,
+      "bggUrl": "https://boardgamegeek.com/boardgame/200174"
+    },
+    {
+      "id": "299790",
+      "name": "Advanced Salvo! European Theater: Tactical WWII Naval Combat Game",
+      "score": 0.06671186662054966,
+      "bggUrl": "https://boardgamegeek.com/boardgame/299790"
+    },
+    {
+      "id": "126683",
+      "name": "1940: Objetivo europa",
+      "score": 0.05898714419522119,
+      "bggUrl": "https://boardgamegeek.com/boardgame/126683"
+    },
+    {
+      "id": "367046",
+      "name": "Animo: Red Letter Day – Percy Strategy Deck",
+      "score": 0.05263402946103253,
+      "bggUrl": "https://boardgamegeek.com/boardgame/367046"
+    }
+  ],
+  "444187": [
+    {
+      "id": "259420",
+      "name": "A.E.G.I.S.: Combining Robot Strategy Game – Variant Command Expansion",
+      "score": 0.23230055142231942,
+      "bggUrl": "https://boardgamegeek.com/boardgame/259420"
+    },
+    {
+      "id": "306721",
+      "name": "A.E.G.I.S.: Combining Robot Strategy Game – Ell Gel Ion Promo Card",
+      "score": 0.22927182221365855,
+      "bggUrl": "https://boardgamegeek.com/boardgame/306721"
+    },
+    {
+      "id": "302705",
+      "name": "Apex Theropod Deck-Building Game: Exotic Predators Expansion Deck",
+      "score": 0.18060559429640535,
+      "bggUrl": "https://boardgamegeek.com/boardgame/302705"
+    },
+    {
+      "id": "256722",
+      "name": "Foragers: Worker Placement Expansion",
+      "score": 0.16582239170529667,
+      "bggUrl": "https://boardgamegeek.com/boardgame/256722"
+    },
+    {
+      "id": "317048",
+      "name": "18WE: Western Europe",
+      "score": 0.14770633343175676,
+      "bggUrl": "https://boardgamegeek.com/boardgame/317048"
+    }
+  ],
+  "174430": [
+    {
+      "id": "27848",
+      "name": "Age of Conan: The Strategy Board Game",
+      "score": 0.3105393779162973,
+      "bggUrl": "https://boardgamegeek.com/boardgame/27848"
+    },
+    {
+      "id": "299790",
+      "name": "Advanced Salvo! European Theater: Tactical WWII Naval Combat Game",
+      "score": 0.23237740293206974,
+      "bggUrl": "https://boardgamegeek.com/boardgame/299790"
+    },
+    {
+      "id": "299104",
+      "name": "Apex Theropod Deck Building Game: Collected Edition",
+      "score": 0.1994578880671629,
+      "bggUrl": "https://boardgamegeek.com/boardgame/299104"
+    },
+    {
+      "id": "9135",
+      "name": "Advanced European Theater of Operations",
+      "score": 0.1721854615756982,
+      "bggUrl": "https://boardgamegeek.com/boardgame/9135"
+    },
+    {
+      "id": "156266",
+      "name": "Apex Theropod Deck-Building Game",
+      "score": 0.1589768033464334,
+      "bggUrl": "https://boardgamegeek.com/boardgame/156266"
+    }
+  ],
+  "291457": [
+    {
+      "id": "27848",
+      "name": "Age of Conan: The Strategy Board Game",
+      "score": 0.31145799055373846,
+      "bggUrl": "https://boardgamegeek.com/boardgame/27848"
+    },
+    {
+      "id": "299790",
+      "name": "Advanced Salvo! European Theater: Tactical WWII Naval Combat Game",
+      "score": 0.24495891239048467,
+      "bggUrl": "https://boardgamegeek.com/boardgame/299790"
+    },
+    {
+      "id": "299104",
+      "name": "Apex Theropod Deck Building Game: Collected Edition",
+      "score": 0.20835397927298852,
+      "bggUrl": "https://boardgamegeek.com/boardgame/299104"
+    },
+    {
+      "id": "9135",
+      "name": "Advanced European Theater of Operations",
+      "score": 0.1763460251734032,
+      "bggUrl": "https://boardgamegeek.com/boardgame/9135"
+    },
+    {
+      "id": "156266",
+      "name": "Apex Theropod Deck-Building Game",
+      "score": 0.1669427767304959,
+      "bggUrl": "https://boardgamegeek.com/boardgame/156266"
+    }
+  ],
+  "327392": [
+    {
+      "id": "148099",
+      "name": "Worker Placement",
+      "score": 0.2798522347876597,
+      "bggUrl": "https://boardgamegeek.com/boardgame/148099"
+    },
+    {
+      "id": "155177",
+      "name": "Worker Placement: Cash Is King",
+      "score": 0.2427211936321326,
+      "bggUrl": "https://boardgamegeek.com/boardgame/155177"
+    },
+    {
+      "id": "24733",
+      "name": "Munchkin Promotional Bookmarks",
+      "score": 0.2175074473684117,
+      "bggUrl": "https://boardgamegeek.com/boardgame/24733"
+    },
+    {
+      "id": "366930",
+      "name": "Animo: Cross Trainers – Stagnetic Strategy Deck",
+      "score": 0.20215872055490908,
+      "bggUrl": "https://boardgamegeek.com/boardgame/366930"
+    },
+    {
+      "id": "367046",
+      "name": "Animo: Red Letter Day – Percy Strategy Deck",
+      "score": 0.19525827382646427,
+      "bggUrl": "https://boardgamegeek.com/boardgame/367046"
+    }
+  ],
+  "356909": [
+    {
+      "id": "321239",
+      "name": "Ambush!: A Fast-Paced Game of Strategy and Sacrifice",
+      "score": 0.1769179745879613,
+      "bggUrl": "https://boardgamegeek.com/boardgame/321239"
+    },
+    {
+      "id": "24733",
+      "name": "Munchkin Promotional Bookmarks",
+      "score": 0.17316489773189037,
+      "bggUrl": "https://boardgamegeek.com/boardgame/24733"
+    },
+    {
+      "id": "449779",
+      "name": "50 Aves de España y Europa: Naturaleza con Juan y Migas",
+      "score": 0.16584594449214804,
+      "bggUrl": "https://boardgamegeek.com/boardgame/449779"
+    },
+    {
+      "id": "449632",
+      "name": "50 Árboles de España y Europa: Naturaleza con Juan y Migas",
+      "score": 0.16584594449214804,
+      "bggUrl": "https://boardgamegeek.com/boardgame/449632"
+    },
+    {
+      "id": "5867",
+      "name": "10 Days in Europe",
+      "score": 0.1490329268240295,
+      "bggUrl": "https://boardgamegeek.com/boardgame/5867"
+    }
+  ],
+  "426523": [
+    {
+      "id": "299790",
+      "name": "Advanced Salvo! European Theater: Tactical WWII Naval Combat Game",
+      "score": 0.39362817404344397,
+      "bggUrl": "https://boardgamegeek.com/boardgame/299790"
+    },
+    {
+      "id": "317048",
+      "name": "18WE: Western Europe",
+      "score": 0.249509896059958,
+      "bggUrl": "https://boardgamegeek.com/boardgame/317048"
+    },
+    {
+      "id": "299104",
+      "name": "Apex Theropod Deck Building Game: Collected Edition",
+      "score": 0.23657895530388612,
+      "bggUrl": "https://boardgamegeek.com/boardgame/299104"
+    },
+    {
+      "id": "175707",
+      "name": "Apex Theropod Deck-Building Game: Exotic Predators Limited Edition",
+      "score": 0.18658677443148625,
+      "bggUrl": "https://boardgamegeek.com/boardgame/175707"
+    },
+    {
+      "id": "156266",
+      "name": "Apex Theropod Deck-Building Game",
+      "score": 0.18415512976765813,
+      "bggUrl": "https://boardgamegeek.com/boardgame/156266"
+    }
+  ],
+  "423729": [
+    {
+      "id": "148099",
+      "name": "Worker Placement",
+      "score": 0.2169984406119261,
+      "bggUrl": "https://boardgamegeek.com/boardgame/148099"
+    },
+    {
+      "id": "321239",
+      "name": "Ambush!: A Fast-Paced Game of Strategy and Sacrifice",
+      "score": 0.19103644643888543,
+      "bggUrl": "https://boardgamegeek.com/boardgame/321239"
+    },
+    {
+      "id": "155177",
+      "name": "Worker Placement: Cash Is King",
+      "score": 0.17511385653126021,
+      "bggUrl": "https://boardgamegeek.com/boardgame/155177"
+    },
+    {
+      "id": "24733",
+      "name": "Munchkin Promotional Bookmarks",
+      "score": 0.1737863241606661,
+      "bggUrl": "https://boardgamegeek.com/boardgame/24733"
+    },
+    {
+      "id": "5867",
+      "name": "10 Days in Europe",
+      "score": 0.15203835314548622,
+      "bggUrl": "https://boardgamegeek.com/boardgame/5867"
+    }
+  ],
+  "436217": [
+    {
+      "id": "299790",
+      "name": "Advanced Salvo! European Theater: Tactical WWII Naval Combat Game",
+      "score": 0.2841143852608879,
+      "bggUrl": "https://boardgamegeek.com/boardgame/299790"
+    },
+    {
+      "id": "27848",
+      "name": "Age of Conan: The Strategy Board Game",
+      "score": 0.27816162596844485,
+      "bggUrl": "https://boardgamegeek.com/boardgame/27848"
+    },
+    {
+      "id": "299104",
+      "name": "Apex Theropod Deck Building Game: Collected Edition",
+      "score": 0.26902820617867096,
+      "bggUrl": "https://boardgamegeek.com/boardgame/299104"
+    },
+    {
+      "id": "156266",
+      "name": "Apex Theropod Deck-Building Game",
+      "score": 0.23670990864531102,
+      "bggUrl": "https://boardgamegeek.com/boardgame/156266"
+    },
+    {
+      "id": "9135",
+      "name": "Advanced European Theater of Operations",
+      "score": 0.22697769107784402,
+      "bggUrl": "https://boardgamegeek.com/boardgame/9135"
+    }
+  ],
+  "358690": [
+    {
+      "id": "366930",
+      "name": "Animo: Cross Trainers – Stagnetic Strategy Deck",
+      "score": 0.30993349952899873,
+      "bggUrl": "https://boardgamegeek.com/boardgame/366930"
+    },
+    {
+      "id": "367046",
+      "name": "Animo: Red Letter Day – Percy Strategy Deck",
+      "score": 0.30259051008323556,
+      "bggUrl": "https://boardgamegeek.com/boardgame/367046"
+    },
+    {
+      "id": "367026",
+      "name": "Animo: Cross Trainers – Draylight Strategy Deck",
+      "score": 0.2949334995289988,
+      "bggUrl": "https://boardgamegeek.com/boardgame/367026"
+    },
+    {
+      "id": "368274",
+      "name": "Animo: Red Letter Day – Treashell Strategy Deck",
+      "score": 0.2949334995289988,
+      "bggUrl": "https://boardgamegeek.com/boardgame/368274"
+    },
+    {
+      "id": "5867",
+      "name": "10 Days in Europe",
+      "score": 0.255334718597168,
+      "bggUrl": "https://boardgamegeek.com/boardgame/5867"
+    }
+  ],
+  "285774": [
+    {
+      "id": "299104",
+      "name": "Apex Theropod Deck Building Game: Collected Edition",
+      "score": 0.28110077337892425,
+      "bggUrl": "https://boardgamegeek.com/boardgame/299104"
+    },
+    {
+      "id": "156266",
+      "name": "Apex Theropod Deck-Building Game",
+      "score": 0.22480114120002817,
+      "bggUrl": "https://boardgamegeek.com/boardgame/156266"
+    },
+    {
+      "id": "299790",
+      "name": "Advanced Salvo! European Theater: Tactical WWII Naval Combat Game",
+      "score": 0.2153735511215602,
+      "bggUrl": "https://boardgamegeek.com/boardgame/299790"
+    },
+    {
+      "id": "175707",
+      "name": "Apex Theropod Deck-Building Game: Exotic Predators Limited Edition",
+      "score": 0.20443425888809588,
+      "bggUrl": "https://boardgamegeek.com/boardgame/175707"
+    },
+    {
+      "id": "27848",
+      "name": "Age of Conan: The Strategy Board Game",
+      "score": 0.1629806661631805,
+      "bggUrl": "https://boardgamegeek.com/boardgame/27848"
+    }
+  ],
+  "430081": [
+    {
+      "id": "299790",
+      "name": "Advanced Salvo! European Theater: Tactical WWII Naval Combat Game",
+      "score": 0.29954564529426553,
+      "bggUrl": "https://boardgamegeek.com/boardgame/299790"
+    },
+    {
+      "id": "317048",
+      "name": "18WE: Western Europe",
+      "score": 0.2345488697638463,
+      "bggUrl": "https://boardgamegeek.com/boardgame/317048"
+    },
+    {
+      "id": "299104",
+      "name": "Apex Theropod Deck Building Game: Collected Edition",
+      "score": 0.21381899435021057,
+      "bggUrl": "https://boardgamegeek.com/boardgame/299104"
+    },
+    {
+      "id": "156266",
+      "name": "Apex Theropod Deck-Building Game",
+      "score": 0.15598276649683018,
+      "bggUrl": "https://boardgamegeek.com/boardgame/156266"
+    },
+    {
+      "id": "175707",
+      "name": "Apex Theropod Deck-Building Game: Exotic Predators Limited Edition",
+      "score": 0.14791788060913752,
+      "bggUrl": "https://boardgamegeek.com/boardgame/175707"
+    }
+  ],
+  "124708": [
+    {
+      "id": "166729",
+      "name": "Age of Conan: The Strategy Board Game – Adventures in Hyboria",
+      "score": 0.35864982406120544,
+      "bggUrl": "https://boardgamegeek.com/boardgame/166729"
+    },
+    {
+      "id": "27848",
+      "name": "Age of Conan: The Strategy Board Game",
+      "score": 0.26531488708444445,
+      "bggUrl": "https://boardgamegeek.com/boardgame/27848"
+    },
+    {
+      "id": "200174",
+      "name": "Apex Theropod Deck-Building Game: Exotic Predators Expansion Deck",
+      "score": 0.21676367192587928,
+      "bggUrl": "https://boardgamegeek.com/boardgame/200174"
+    },
+    {
+      "id": "202307",
+      "name": "Apex Theropod Deck-Building Game: The Stomping Dead Expansion Deck",
+      "score": 0.21348745185977439,
+      "bggUrl": "https://boardgamegeek.com/boardgame/202307"
+    },
+    {
+      "id": "197104",
+      "name": "Apex Theropod Deck-Building Game: Stomping Grounds Expansion Deck",
+      "score": 0.16188700445255438,
+      "bggUrl": "https://boardgamegeek.com/boardgame/197104"
+    }
+  ],
+  "327297": [
+    {
+      "id": "20457",
+      "name": "Italy",
+      "score": 0.6328163916642233,
+      "bggUrl": "https://boardgamegeek.com/boardgame/20457"
+    },
+    {
+      "id": "256722",
+      "name": "Foragers: Worker Placement Expansion",
+      "score": 0.23979965080778104,
+      "bggUrl": "https://boardgamegeek.com/boardgame/256722"
+    },
+    {
+      "id": "148099",
+      "name": "Worker Placement",
+      "score": 0.23750013097729678,
+      "bggUrl": "https://boardgamegeek.com/boardgame/148099"
+    },
+    {
+      "id": "368744",
+      "name": "Arms Race Chess",
+      "score": 0.18536803454801587,
+      "bggUrl": "https://boardgamegeek.com/boardgame/368744"
+    },
+    {
+      "id": "5867",
+      "name": "10 Days in Europe",
+      "score": 0.16298767214056117,
+      "bggUrl": "https://boardgamegeek.com/boardgame/5867"
+    }
+  ],
+  "436587": [
+    {
+      "id": "368744",
+      "name": "Arms Race Chess",
+      "score": 0.18288081386138072,
+      "bggUrl": "https://boardgamegeek.com/boardgame/368744"
+    },
+    {
+      "id": "347840",
+      "name": "Action Force Strategy Game",
+      "score": 0.1655243379638155,
+      "bggUrl": "https://boardgamegeek.com/boardgame/347840"
+    },
+    {
+      "id": "302705",
+      "name": "Apex Theropod Deck-Building Game: Exotic Predators Expansion Deck",
+      "score": 0.15321701528282608,
+      "bggUrl": "https://boardgamegeek.com/boardgame/302705"
+    },
+    {
+      "id": "256722",
+      "name": "Foragers: Worker Placement Expansion",
+      "score": 0.13041157351288724,
+      "bggUrl": "https://boardgamegeek.com/boardgame/256722"
+    },
+    {
+      "id": "126683",
+      "name": "1940: Objetivo europa",
+      "score": 0.1240278453518508,
+      "bggUrl": "https://boardgamegeek.com/boardgame/126683"
+    }
+  ],
+  "355438": [
+    {
+      "id": "449779",
+      "name": "50 Aves de España y Europa: Naturaleza con Juan y Migas",
+      "score": 0.14316556494550953,
+      "bggUrl": "https://boardgamegeek.com/boardgame/449779"
+    },
+    {
+      "id": "449632",
+      "name": "50 Árboles de España y Europa: Naturaleza con Juan y Migas",
+      "score": 0.14316556494550953,
+      "bggUrl": "https://boardgamegeek.com/boardgame/449632"
+    },
+    {
+      "id": "299104",
+      "name": "Apex Theropod Deck Building Game: Collected Edition",
+      "score": 0.04760595403671494,
+      "bggUrl": "https://boardgamegeek.com/boardgame/299104"
+    },
+    {
+      "id": "302705",
+      "name": "Apex Theropod Deck-Building Game: Exotic Predators Expansion Deck",
+      "score": 0.03473826599150069,
+      "bggUrl": "https://boardgamegeek.com/boardgame/302705"
+    },
+    {
+      "id": "299565",
+      "name": "1676: Mad Dogs & Englishmen – Rules for Including Magic, Special Characters, Fell Beasts, & Europeans in 1676 Games",
+      "score": 0.03251727985815211,
+      "bggUrl": "https://boardgamegeek.com/boardgame/299565"
+    }
+  ],
+  "303057": [
+    {
+      "id": "27848",
+      "name": "Age of Conan: The Strategy Board Game",
+      "score": 0.2215703233025792,
+      "bggUrl": "https://boardgamegeek.com/boardgame/27848"
+    },
+    {
+      "id": "148099",
+      "name": "Worker Placement",
+      "score": 0.21172287225872088,
+      "bggUrl": "https://boardgamegeek.com/boardgame/148099"
+    },
+    {
+      "id": "143745",
+      "name": "2WW: The War in Europe",
+      "score": 0.20242241378856818,
+      "bggUrl": "https://boardgamegeek.com/boardgame/143745"
+    },
+    {
+      "id": "2275",
+      "name": "Airlines",
+      "score": 0.20184734394586368,
+      "bggUrl": "https://boardgamegeek.com/boardgame/2275"
+    },
+    {
+      "id": "155177",
+      "name": "Worker Placement: Cash Is King",
+      "score": 0.19787700301834937,
+      "bggUrl": "https://boardgamegeek.com/boardgame/155177"
+    }
+  ],
+  "30549": [
+    {
+      "id": "166729",
+      "name": "Age of Conan: The Strategy Board Game – Adventures in Hyboria",
+      "score": 0.21148593229825705,
+      "bggUrl": "https://boardgamegeek.com/boardgame/166729"
+    },
+    {
+      "id": "5867",
+      "name": "10 Days in Europe",
+      "score": 0.2010372775296589,
+      "bggUrl": "https://boardgamegeek.com/boardgame/5867"
+    },
+    {
+      "id": "425060",
+      "name": "ADELLA: The Maritime Strategy Board Game",
+      "score": 0.1631178867082349,
+      "bggUrl": "https://boardgamegeek.com/boardgame/425060"
+    },
+    {
+      "id": "155177",
+      "name": "Worker Placement: Cash Is King",
+      "score": 0.15592220679238922,
+      "bggUrl": "https://boardgamegeek.com/boardgame/155177"
+    },
+    {
+      "id": "186841",
+      "name": "Anarcade Deck Building Game: Vector Blue",
+      "score": 0.13712111056516563,
+      "bggUrl": "https://boardgamegeek.com/boardgame/186841"
+    }
+  ],
+  "314040": [
+    {
+      "id": "27848",
+      "name": "Age of Conan: The Strategy Board Game",
+      "score": 0.19942507802519716,
+      "bggUrl": "https://boardgamegeek.com/boardgame/27848"
+    },
+    {
+      "id": "155177",
+      "name": "Worker Placement: Cash Is King",
+      "score": 0.17913848850468944,
+      "bggUrl": "https://boardgamegeek.com/boardgame/155177"
+    },
+    {
+      "id": "143745",
+      "name": "2WW: The War in Europe",
+      "score": 0.16940342163816235,
+      "bggUrl": "https://boardgamegeek.com/boardgame/143745"
+    },
+    {
+      "id": "146144",
+      "name": "AEGIS: Combining Robot Strategy Game",
+      "score": 0.16171034201671772,
+      "bggUrl": "https://boardgamegeek.com/boardgame/146144"
+    },
+    {
+      "id": "186841",
+      "name": "Anarcade Deck Building Game: Vector Blue",
+      "score": 0.1506646792771965,
+      "bggUrl": "https://boardgamegeek.com/boardgame/186841"
+    }
+  ],
+  "161936": [
+    {
+      "id": "27848",
+      "name": "Age of Conan: The Strategy Board Game",
+      "score": 0.21695083421931277,
+      "bggUrl": "https://boardgamegeek.com/boardgame/27848"
+    },
+    {
+      "id": "146144",
+      "name": "AEGIS: Combining Robot Strategy Game",
+      "score": 0.16532954951421344,
+      "bggUrl": "https://boardgamegeek.com/boardgame/146144"
+    },
+    {
+      "id": "186841",
+      "name": "Anarcade Deck Building Game: Vector Blue",
+      "score": 0.1649644937021432,
+      "bggUrl": "https://boardgamegeek.com/boardgame/186841"
+    },
+    {
+      "id": "177123",
+      "name": "Anarcade Deck Building Game: Raster Red",
+      "score": 0.16108917237195594,
+      "bggUrl": "https://boardgamegeek.com/boardgame/177123"
+    },
+    {
+      "id": "143745",
+      "name": "2WW: The War in Europe",
+      "score": 0.1599664423979539,
+      "bggUrl": "https://boardgamegeek.com/boardgame/143745"
+    }
+  ],
+  "150658": [
+    {
+      "id": "24733",
+      "name": "Munchkin Promotional Bookmarks",
+      "score": 0.22022235822932432,
+      "bggUrl": "https://boardgamegeek.com/boardgame/24733"
+    },
+    {
+      "id": "166729",
+      "name": "Age of Conan: The Strategy Board Game – Adventures in Hyboria",
+      "score": 0.21069696846556746,
+      "bggUrl": "https://boardgamegeek.com/boardgame/166729"
+    },
+    {
+      "id": "2861",
+      "name": "Aquitaine: Strategy and the Medieval War Ride",
+      "score": 0.18405109505473854,
+      "bggUrl": "https://boardgamegeek.com/boardgame/2861"
+    },
+    {
+      "id": "5867",
+      "name": "10 Days in Europe",
+      "score": 0.1664477394194392,
+      "bggUrl": "https://boardgamegeek.com/boardgame/5867"
+    },
+    {
+      "id": "148099",
+      "name": "Worker Placement",
+      "score": 0.16238127902754407,
+      "bggUrl": "https://boardgamegeek.com/boardgame/148099"
+    }
+  ],
+  "312786": [
+    {
+      "id": "449779",
+      "name": "50 Aves de España y Europa: Naturaleza con Juan y Migas",
+      "score": 0.2515327546861767,
+      "bggUrl": "https://boardgamegeek.com/boardgame/449779"
+    },
+    {
+      "id": "449632",
+      "name": "50 Árboles de España y Europa: Naturaleza con Juan y Migas",
+      "score": 0.2515327546861767,
+      "bggUrl": "https://boardgamegeek.com/boardgame/449632"
+    },
+    {
+      "id": "256722",
+      "name": "Foragers: Worker Placement Expansion",
+      "score": 0.17357231441894783,
+      "bggUrl": "https://boardgamegeek.com/boardgame/256722"
+    },
+    {
+      "id": "368744",
+      "name": "Arms Race Chess",
+      "score": 0.15722351652198452,
+      "bggUrl": "https://boardgamegeek.com/boardgame/368744"
+    },
+    {
+      "id": "321239",
+      "name": "Ambush!: A Fast-Paced Game of Strategy and Sacrifice",
+      "score": 0.14482805564600376,
+      "bggUrl": "https://boardgamegeek.com/boardgame/321239"
+    }
+  ],
+  "411404": [
+    {
+      "id": "366930",
+      "name": "Animo: Cross Trainers – Stagnetic Strategy Deck",
+      "score": 0.22168065306878904,
+      "bggUrl": "https://boardgamegeek.com/boardgame/366930"
+    },
+    {
+      "id": "367046",
+      "name": "Animo: Red Letter Day – Percy Strategy Deck",
+      "score": 0.21268256055657858,
+      "bggUrl": "https://boardgamegeek.com/boardgame/367046"
+    },
+    {
+      "id": "367026",
+      "name": "Animo: Cross Trainers – Draylight Strategy Deck",
+      "score": 0.20668065306878905,
+      "bggUrl": "https://boardgamegeek.com/boardgame/367026"
+    },
+    {
+      "id": "368274",
+      "name": "Animo: Red Letter Day – Treashell Strategy Deck",
+      "score": 0.20668065306878905,
+      "bggUrl": "https://boardgamegeek.com/boardgame/368274"
+    },
+    {
+      "id": "306721",
+      "name": "A.E.G.I.S.: Combining Robot Strategy Game – Ell Gel Ion Promo Card",
+      "score": 0.1675215937435141,
+      "bggUrl": "https://boardgamegeek.com/boardgame/306721"
+    }
+  ],
+  "248267": [
+    {
+      "id": "24733",
+      "name": "Munchkin Promotional Bookmarks",
+      "score": 0.20941512052761918,
+      "bggUrl": "https://boardgamegeek.com/boardgame/24733"
+    },
+    {
+      "id": "2275",
+      "name": "Airlines",
+      "score": 0.1638866866937525,
+      "bggUrl": "https://boardgamegeek.com/boardgame/2275"
+    },
+    {
+      "id": "366930",
+      "name": "Animo: Cross Trainers – Stagnetic Strategy Deck",
+      "score": 0.1570963519519304,
+      "bggUrl": "https://boardgamegeek.com/boardgame/366930"
+    },
+    {
+      "id": "367046",
+      "name": "Animo: Red Letter Day – Percy Strategy Deck",
+      "score": 0.14874250482128426,
+      "bggUrl": "https://boardgamegeek.com/boardgame/367046"
+    },
+    {
+      "id": "367026",
+      "name": "Animo: Cross Trainers – Draylight Strategy Deck",
+      "score": 0.1420963519519304,
+      "bggUrl": "https://boardgamegeek.com/boardgame/367026"
+    }
+  ],
+  "444335": [
+    {
+      "id": "299790",
+      "name": "Advanced Salvo! European Theater: Tactical WWII Naval Combat Game",
+      "score": 0.1568944044025126,
+      "bggUrl": "https://boardgamegeek.com/boardgame/299790"
+    },
+    {
+      "id": "449779",
+      "name": "50 Aves de España y Europa: Naturaleza con Juan y Migas",
+      "score": 0.1414802126769185,
+      "bggUrl": "https://boardgamegeek.com/boardgame/449779"
+    },
+    {
+      "id": "449632",
+      "name": "50 Árboles de España y Europa: Naturaleza con Juan y Migas",
+      "score": 0.1414802126769185,
+      "bggUrl": "https://boardgamegeek.com/boardgame/449632"
+    },
+    {
+      "id": "317048",
+      "name": "18WE: Western Europe",
+      "score": 0.12798166684995,
+      "bggUrl": "https://boardgamegeek.com/boardgame/317048"
+    },
+    {
+      "id": "166729",
+      "name": "Age of Conan: The Strategy Board Game – Adventures in Hyboria",
+      "score": 0.09363461726405896,
+      "bggUrl": "https://boardgamegeek.com/boardgame/166729"
+    }
+  ],
+  "446049": [
+    {
+      "id": "299790",
+      "name": "Advanced Salvo! European Theater: Tactical WWII Naval Combat Game",
+      "score": 0.14338752908145247,
+      "bggUrl": "https://boardgamegeek.com/boardgame/299790"
+    },
+    {
+      "id": "449779",
+      "name": "50 Aves de España y Europa: Naturaleza con Juan y Migas",
+      "score": 0.13625219648011364,
+      "bggUrl": "https://boardgamegeek.com/boardgame/449779"
+    },
+    {
+      "id": "449632",
+      "name": "50 Árboles de España y Europa: Naturaleza con Juan y Migas",
+      "score": 0.13625219648011364,
+      "bggUrl": "https://boardgamegeek.com/boardgame/449632"
+    },
+    {
+      "id": "9135",
+      "name": "Advanced European Theater of Operations",
+      "score": 0.1103122039738894,
+      "bggUrl": "https://boardgamegeek.com/boardgame/9135"
+    },
+    {
+      "id": "299565",
+      "name": "1676: Mad Dogs & Englishmen – Rules for Including Magic, Special Characters, Fell Beasts, & Europeans in 1676 Games",
+      "score": 0.10157009779064673,
+      "bggUrl": "https://boardgamegeek.com/boardgame/299565"
+    }
+  ],
+  "232830": [
+    {
+      "id": "24733",
+      "name": "Munchkin Promotional Bookmarks",
+      "score": 0.20713403070008204,
+      "bggUrl": "https://boardgamegeek.com/boardgame/24733"
+    },
+    {
+      "id": "449779",
+      "name": "50 Aves de España y Europa: Naturaleza con Juan y Migas",
+      "score": 0.1790202703878268,
+      "bggUrl": "https://boardgamegeek.com/boardgame/449779"
+    },
+    {
+      "id": "449632",
+      "name": "50 Árboles de España y Europa: Naturaleza con Juan y Migas",
+      "score": 0.1790202703878268,
+      "bggUrl": "https://boardgamegeek.com/boardgame/449632"
+    },
+    {
+      "id": "5867",
+      "name": "10 Days in Europe",
+      "score": 0.13575627053844538,
+      "bggUrl": "https://boardgamegeek.com/boardgame/5867"
+    },
+    {
+      "id": "2861",
+      "name": "Aquitaine: Strategy and the Medieval War Ride",
+      "score": 0.11913752015691259,
+      "bggUrl": "https://boardgamegeek.com/boardgame/2861"
+    }
+  ],
+  "1269": [
+    {
+      "id": "2275",
+      "name": "Airlines",
+      "score": 0.6613402723684242,
+      "bggUrl": "https://boardgamegeek.com/boardgame/2275"
+    },
+    {
+      "id": "5867",
+      "name": "10 Days in Europe",
+      "score": 0.41396481816991637,
+      "bggUrl": "https://boardgamegeek.com/boardgame/5867"
+    },
+    {
+      "id": "366930",
+      "name": "Animo: Cross Trainers – Stagnetic Strategy Deck",
+      "score": 0.3915697786238937,
+      "bggUrl": "https://boardgamegeek.com/boardgame/366930"
+    },
+    {
+      "id": "367046",
+      "name": "Animo: Red Letter Day – Percy Strategy Deck",
+      "score": 0.38788897488625834,
+      "bggUrl": "https://boardgamegeek.com/boardgame/367046"
+    },
+    {
+      "id": "367026",
+      "name": "Animo: Cross Trainers – Draylight Strategy Deck",
+      "score": 0.3765697786238937,
+      "bggUrl": "https://boardgamegeek.com/boardgame/367026"
+    }
+  ],
+  "162886": [
+    {
+      "id": "299104",
+      "name": "Apex Theropod Deck Building Game: Collected Edition",
+      "score": 0.24818953699820984,
+      "bggUrl": "https://boardgamegeek.com/boardgame/299104"
+    },
+    {
+      "id": "156266",
+      "name": "Apex Theropod Deck-Building Game",
+      "score": 0.21198068820719493,
+      "bggUrl": "https://boardgamegeek.com/boardgame/156266"
+    },
+    {
+      "id": "175707",
+      "name": "Apex Theropod Deck-Building Game: Exotic Predators Limited Edition",
+      "score": 0.1976243864738328,
+      "bggUrl": "https://boardgamegeek.com/boardgame/175707"
+    },
+    {
+      "id": "177123",
+      "name": "Anarcade Deck Building Game: Raster Red",
+      "score": 0.18829708879187085,
+      "bggUrl": "https://boardgamegeek.com/boardgame/177123"
+    },
+    {
+      "id": "27848",
+      "name": "Age of Conan: The Strategy Board Game",
+      "score": 0.18460096716136837,
+      "bggUrl": "https://boardgamegeek.com/boardgame/27848"
+    }
+  ],
+  "164153": [
+    {
+      "id": "27848",
+      "name": "Age of Conan: The Strategy Board Game",
+      "score": 0.3628975234933722,
+      "bggUrl": "https://boardgamegeek.com/boardgame/27848"
+    },
+    {
+      "id": "146144",
+      "name": "AEGIS: Combining Robot Strategy Game",
+      "score": 0.3381999267970983,
+      "bggUrl": "https://boardgamegeek.com/boardgame/146144"
+    },
+    {
+      "id": "301373",
+      "name": "The Age of Eagles: Napoleon vs. Europe 1813-14",
+      "score": 0.29057734568358895,
+      "bggUrl": "https://boardgamegeek.com/boardgame/301373"
+    },
+    {
+      "id": "143745",
+      "name": "2WW: The War in Europe",
+      "score": 0.2633800126191453,
+      "bggUrl": "https://boardgamegeek.com/boardgame/143745"
+    },
+    {
+      "id": "299790",
+      "name": "Advanced Salvo! European Theater: Tactical WWII Naval Combat Game",
+      "score": 0.25047661074939626,
+      "bggUrl": "https://boardgamegeek.com/boardgame/299790"
+    }
+  ],
+  "374173": [
+    {
+      "id": "197553",
+      "name": "Apex Theropod Deck-Building Game: Promethean Wars Expansion Deck",
+      "score": 0.28017944294648384,
+      "bggUrl": "https://boardgamegeek.com/boardgame/197553"
+    },
+    {
+      "id": "177123",
+      "name": "Anarcade Deck Building Game: Raster Red",
+      "score": 0.2570973782333922,
+      "bggUrl": "https://boardgamegeek.com/boardgame/177123"
+    },
+    {
+      "id": "186841",
+      "name": "Anarcade Deck Building Game: Vector Blue",
+      "score": 0.25701284682678704,
+      "bggUrl": "https://boardgamegeek.com/boardgame/186841"
+    },
+    {
+      "id": "299104",
+      "name": "Apex Theropod Deck Building Game: Collected Edition",
+      "score": 0.24930206167114954,
+      "bggUrl": "https://boardgamegeek.com/boardgame/299104"
+    },
+    {
+      "id": "302705",
+      "name": "Apex Theropod Deck-Building Game: Exotic Predators Expansion Deck",
+      "score": 0.23500126843017677,
+      "bggUrl": "https://boardgamegeek.com/boardgame/302705"
+    }
+  ],
+  "103885": [
+    {
+      "id": "27848",
+      "name": "Age of Conan: The Strategy Board Game",
+      "score": 0.2790453083416372,
+      "bggUrl": "https://boardgamegeek.com/boardgame/27848"
+    },
+    {
+      "id": "146144",
+      "name": "AEGIS: Combining Robot Strategy Game",
+      "score": 0.2774180829572862,
+      "bggUrl": "https://boardgamegeek.com/boardgame/146144"
+    },
+    {
+      "id": "299790",
+      "name": "Advanced Salvo! European Theater: Tactical WWII Naval Combat Game",
+      "score": 0.25160621106466885,
+      "bggUrl": "https://boardgamegeek.com/boardgame/299790"
+    },
+    {
+      "id": "143745",
+      "name": "2WW: The War in Europe",
+      "score": 0.24667444270287991,
+      "bggUrl": "https://boardgamegeek.com/boardgame/143745"
+    },
+    {
+      "id": "2861",
+      "name": "Aquitaine: Strategy and the Medieval War Ride",
+      "score": 0.23606749453812026,
+      "bggUrl": "https://boardgamegeek.com/boardgame/2861"
+    }
+  ],
+  "123260": [
+    {
+      "id": "334948",
+      "name": "18EE/82 Eastern Europe",
+      "score": 0.21868551136584952,
+      "bggUrl": "https://boardgamegeek.com/boardgame/334948"
+    },
+    {
+      "id": "317048",
+      "name": "18WE: Western Europe",
+      "score": 0.17898151543597637,
+      "bggUrl": "https://boardgamegeek.com/boardgame/317048"
+    },
+    {
+      "id": "200174",
+      "name": "Apex Theropod Deck-Building Game: Exotic Predators Expansion Deck",
+      "score": 0.16992639911451782,
+      "bggUrl": "https://boardgamegeek.com/boardgame/200174"
+    },
+    {
+      "id": "202307",
+      "name": "Apex Theropod Deck-Building Game: The Stomping Dead Expansion Deck",
+      "score": 0.16982947215608438,
+      "bggUrl": "https://boardgamegeek.com/boardgame/202307"
+    },
+    {
+      "id": "155177",
+      "name": "Worker Placement: Cash Is King",
+      "score": 0.16671907210395442,
+      "bggUrl": "https://boardgamegeek.com/boardgame/155177"
+    }
+  ],
+  "249816": [
+    {
+      "id": "321239",
+      "name": "Ambush!: A Fast-Paced Game of Strategy and Sacrifice",
+      "score": 0.21353338962383803,
+      "bggUrl": "https://boardgamegeek.com/boardgame/321239"
+    },
+    {
+      "id": "347840",
+      "name": "Action Force Strategy Game",
+      "score": 0.1870206265262362,
+      "bggUrl": "https://boardgamegeek.com/boardgame/347840"
+    },
+    {
+      "id": "368744",
+      "name": "Arms Race Chess",
+      "score": 0.18263073475451683,
+      "bggUrl": "https://boardgamegeek.com/boardgame/368744"
+    },
+    {
+      "id": "2275",
+      "name": "Airlines",
+      "score": 0.1682967271092593,
+      "bggUrl": "https://boardgamegeek.com/boardgame/2275"
+    },
+    {
+      "id": "299565",
+      "name": "1676: Mad Dogs & Englishmen – Rules for Including Magic, Special Characters, Fell Beasts, & Europeans in 1676 Games",
+      "score": 0.13910484065644566,
+      "bggUrl": "https://boardgamegeek.com/boardgame/299565"
+    }
+  ],
+  "333373": [
+    {
+      "id": "366930",
+      "name": "Animo: Cross Trainers – Stagnetic Strategy Deck",
+      "score": 0.1827575616536361,
+      "bggUrl": "https://boardgamegeek.com/boardgame/366930"
+    },
+    {
+      "id": "367046",
+      "name": "Animo: Red Letter Day – Percy Strategy Deck",
+      "score": 0.17664987043783248,
+      "bggUrl": "https://boardgamegeek.com/boardgame/367046"
+    },
+    {
+      "id": "368744",
+      "name": "Arms Race Chess",
+      "score": 0.1687881695855852,
+      "bggUrl": "https://boardgamegeek.com/boardgame/368744"
+    },
+    {
+      "id": "367026",
+      "name": "Animo: Cross Trainers – Draylight Strategy Deck",
+      "score": 0.1677575616536361,
+      "bggUrl": "https://boardgamegeek.com/boardgame/367026"
+    },
+    {
+      "id": "368274",
+      "name": "Animo: Red Letter Day – Treashell Strategy Deck",
+      "score": 0.1677575616536361,
+      "bggUrl": "https://boardgamegeek.com/boardgame/368274"
+    }
+  ],
+  "46213": [
+    {
+      "id": "24733",
+      "name": "Munchkin Promotional Bookmarks",
+      "score": 0.2019236990393334,
+      "bggUrl": "https://boardgamegeek.com/boardgame/24733"
+    },
+    {
+      "id": "308688",
+      "name": "Anarcade Deck Building Game: Champion Gold",
+      "score": 0.14693123122035903,
+      "bggUrl": "https://boardgamegeek.com/boardgame/308688"
+    },
+    {
+      "id": "5867",
+      "name": "10 Days in Europe",
+      "score": 0.13694466147817083,
+      "bggUrl": "https://boardgamegeek.com/boardgame/5867"
+    },
+    {
+      "id": "146144",
+      "name": "AEGIS: Combining Robot Strategy Game",
+      "score": 0.13268555991741712,
+      "bggUrl": "https://boardgamegeek.com/boardgame/146144"
+    },
+    {
+      "id": "186841",
+      "name": "Anarcade Deck Building Game: Vector Blue",
+      "score": 0.12422797576067658,
+      "bggUrl": "https://boardgamegeek.com/boardgame/186841"
+    }
+  ],
+  "410382": [
+    {
+      "id": "308688",
+      "name": "Anarcade Deck Building Game: Champion Gold",
+      "score": 0.18992171377663575,
+      "bggUrl": "https://boardgamegeek.com/boardgame/308688"
+    },
+    {
+      "id": "5867",
+      "name": "10 Days in Europe",
+      "score": 0.1890213667983959,
+      "bggUrl": "https://boardgamegeek.com/boardgame/5867"
+    },
+    {
+      "id": "126683",
+      "name": "1940: Objetivo europa",
+      "score": 0.1781889190963655,
+      "bggUrl": "https://boardgamegeek.com/boardgame/126683"
+    },
+    {
+      "id": "2861",
+      "name": "Aquitaine: Strategy and the Medieval War Ride",
+      "score": 0.15602576599836032,
+      "bggUrl": "https://boardgamegeek.com/boardgame/2861"
+    },
+    {
+      "id": "321239",
+      "name": "Ambush!: A Fast-Paced Game of Strategy and Sacrifice",
+      "score": 0.14980818684892508,
+      "bggUrl": "https://boardgamegeek.com/boardgame/321239"
+    }
+  ],
+  "8944": [
+    {
+      "id": "299565",
+      "name": "1676: Mad Dogs & Englishmen – Rules for Including Magic, Special Characters, Fell Beasts, & Europeans in 1676 Games",
+      "score": 0.22415042836629073,
+      "bggUrl": "https://boardgamegeek.com/boardgame/299565"
+    },
+    {
+      "id": "299790",
+      "name": "Advanced Salvo! European Theater: Tactical WWII Naval Combat Game",
+      "score": 0.2019066816286022,
+      "bggUrl": "https://boardgamegeek.com/boardgame/299790"
+    },
+    {
+      "id": "2861",
+      "name": "Aquitaine: Strategy and the Medieval War Ride",
+      "score": 0.13681265543361648,
+      "bggUrl": "https://boardgamegeek.com/boardgame/2861"
+    },
+    {
+      "id": "259420",
+      "name": "A.E.G.I.S.: Combining Robot Strategy Game – Variant Command Expansion",
+      "score": 0.13521277705818394,
+      "bggUrl": "https://boardgamegeek.com/boardgame/259420"
+    },
+    {
+      "id": "188573",
+      "name": "1WW: World War One in Europe",
+      "score": 0.13242512386486882,
+      "bggUrl": "https://boardgamegeek.com/boardgame/188573"
+    }
+  ],
+  "2223": [
+    {
+      "id": "321239",
+      "name": "Ambush!: A Fast-Paced Game of Strategy and Sacrifice",
+      "score": 0.28968900106297096,
+      "bggUrl": "https://boardgamegeek.com/boardgame/321239"
+    },
+    {
+      "id": "367046",
+      "name": "Animo: Red Letter Day – Percy Strategy Deck",
+      "score": 0.25510203070008364,
+      "bggUrl": "https://boardgamegeek.com/boardgame/367046"
+    },
+    {
+      "id": "366930",
+      "name": "Animo: Cross Trainers – Stagnetic Strategy Deck",
+      "score": 0.25479679394979005,
+      "bggUrl": "https://boardgamegeek.com/boardgame/366930"
+    },
+    {
+      "id": "367026",
+      "name": "Animo: Cross Trainers – Draylight Strategy Deck",
+      "score": 0.24408250823550431,
+      "bggUrl": "https://boardgamegeek.com/boardgame/367026"
+    },
+    {
+      "id": "368274",
+      "name": "Animo: Red Letter Day – Treashell Strategy Deck",
+      "score": 0.24408250823550431,
+      "bggUrl": "https://boardgamegeek.com/boardgame/368274"
+    }
+  ],
+  "266192": [
+    {
+      "id": "299104",
+      "name": "Apex Theropod Deck Building Game: Collected Edition",
+      "score": 0.33728019861866426,
+      "bggUrl": "https://boardgamegeek.com/boardgame/299104"
+    },
+    {
+      "id": "156266",
+      "name": "Apex Theropod Deck-Building Game",
+      "score": 0.27371449955549826,
+      "bggUrl": "https://boardgamegeek.com/boardgame/156266"
+    },
+    {
+      "id": "175707",
+      "name": "Apex Theropod Deck-Building Game: Exotic Predators Limited Edition",
+      "score": 0.2716014682481372,
+      "bggUrl": "https://boardgamegeek.com/boardgame/175707"
+    },
+    {
+      "id": "200174",
+      "name": "Apex Theropod Deck-Building Game: Exotic Predators Expansion Deck",
+      "score": 0.24621237030542406,
+      "bggUrl": "https://boardgamegeek.com/boardgame/200174"
+    },
+    {
+      "id": "299790",
+      "name": "Advanced Salvo! European Theater: Tactical WWII Naval Combat Game",
+      "score": 0.24476170622106347,
+      "bggUrl": "https://boardgamegeek.com/boardgame/299790"
+    }
+  ],
+  "358621": [
+    {
+      "id": "24733",
+      "name": "Munchkin Promotional Bookmarks",
+      "score": 0.21993589700750468,
+      "bggUrl": "https://boardgamegeek.com/boardgame/24733"
+    },
+    {
+      "id": "321239",
+      "name": "Ambush!: A Fast-Paced Game of Strategy and Sacrifice",
+      "score": 0.19759432438031177,
+      "bggUrl": "https://boardgamegeek.com/boardgame/321239"
+    },
+    {
+      "id": "2275",
+      "name": "Airlines",
+      "score": 0.18544641522074728,
+      "bggUrl": "https://boardgamegeek.com/boardgame/2275"
+    },
+    {
+      "id": "5867",
+      "name": "10 Days in Europe",
+      "score": 0.1322982073074577,
+      "bggUrl": "https://boardgamegeek.com/boardgame/5867"
+    },
+    {
+      "id": "148099",
+      "name": "Worker Placement",
+      "score": 0.12239159429577805,
+      "bggUrl": "https://boardgamegeek.com/boardgame/148099"
+    }
+  ],
+  "2243": [
+    {
+      "id": "347840",
+      "name": "Action Force Strategy Game",
+      "score": 0.2236124693238485,
+      "bggUrl": "https://boardgamegeek.com/boardgame/347840"
+    },
+    {
+      "id": "299565",
+      "name": "1676: Mad Dogs & Englishmen – Rules for Including Magic, Special Characters, Fell Beasts, & Europeans in 1676 Games",
+      "score": 0.18409132885549884,
+      "bggUrl": "https://boardgamegeek.com/boardgame/299565"
+    },
+    {
+      "id": "2861",
+      "name": "Aquitaine: Strategy and the Medieval War Ride",
+      "score": 0.17850090801102272,
+      "bggUrl": "https://boardgamegeek.com/boardgame/2861"
+    },
+    {
+      "id": "368744",
+      "name": "Arms Race Chess",
+      "score": 0.1716265017607732,
+      "bggUrl": "https://boardgamegeek.com/boardgame/368744"
+    },
+    {
+      "id": "24733",
+      "name": "Munchkin Promotional Bookmarks",
+      "score": 0.1708125433094535,
+      "bggUrl": "https://boardgamegeek.com/boardgame/24733"
     }
   ]
 }
