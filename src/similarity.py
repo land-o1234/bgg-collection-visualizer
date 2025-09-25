@@ -44,7 +44,7 @@ def normalize_numeric_features(games: Dict[str, Dict[str, Any]]) -> Dict[str, Li
     Extract and normalize numeric features for all games.
     Returns dict mapping game_id -> normalized feature vector.
     """
-    feature_names = ["averagerating", "averageweight", "playingtime", "minplayers", "maxplayers", "minage"]
+    feature_names = ["averagerating", "averageweight", "playingtime", "minplayers", "maxplayers", "minage", "year"]
     
     # Extract all values for normalization
     all_values = {name: [] for name in feature_names}
@@ -86,14 +86,18 @@ def normalize_numeric_features(games: Dict[str, Dict[str, Any]]) -> Dict[str, Li
 
 def compute_game_similarity(game1: Dict[str, Any], game2: Dict[str, Any], 
                           normalized_features1: List[float], normalized_features2: List[float],
-                          mechanics_weight: float = 0.5, 
-                          categories_weight: float = 0.3, 
-                          numeric_weight: float = 0.2) -> float:
+                          mechanics_weight: float = 0.4, 
+                          categories_weight: float = 0.25, 
+                          numeric_weight: float = 0.2,
+                          designers_weight: float = 0.1,
+                          publishers_weight: float = 0.05) -> float:
     """
     Compute similarity between two games using weighted combination of:
-    - Jaccard similarity of mechanics (50%)
-    - Jaccard similarity of categories (30%) 
+    - Jaccard similarity of mechanics (40%)
+    - Jaccard similarity of categories (25%) 
     - Cosine similarity of normalized numeric features (20%)
+    - Jaccard similarity of designers (10%)
+    - Jaccard similarity of publishers (5%)
     """
     
     # Extract mechanics and categories as sets of names
@@ -103,17 +107,28 @@ def compute_game_similarity(game1: Dict[str, Any], game2: Dict[str, Any],
     categories1 = set(c.get("name", "") for c in game1.get("categories", []) if c.get("name"))
     categories2 = set(c.get("name", "") for c in game2.get("categories", []) if c.get("name"))
     
+    # Extract designers and publishers
+    designers1 = set(d.get("name", "") for d in game1.get("designers", []) if d.get("name"))
+    designers2 = set(d.get("name", "") for d in game2.get("designers", []) if d.get("name"))
+    
+    publishers1 = set(p.get("name", "") for p in game1.get("publishers", []) if p.get("name"))
+    publishers2 = set(p.get("name", "") for p in game2.get("publishers", []) if p.get("name"))
+    
     # Compute component similarities
     mechanics_sim = jaccard_similarity(mechanics1, mechanics2)
     categories_sim = jaccard_similarity(categories1, categories2)
     numeric_sim = cosine_similarity(normalized_features1, normalized_features2)
+    designers_sim = jaccard_similarity(designers1, designers2)
+    publishers_sim = jaccard_similarity(publishers1, publishers2)
     
     # Weighted combination
-    total_weight = mechanics_weight + categories_weight + numeric_weight
+    total_weight = mechanics_weight + categories_weight + numeric_weight + designers_weight + publishers_weight
     similarity = (
         mechanics_weight * mechanics_sim + 
         categories_weight * categories_sim + 
-        numeric_weight * numeric_sim
+        numeric_weight * numeric_sim +
+        designers_weight * designers_sim +
+        publishers_weight * publishers_sim
     ) / total_weight
     
     return similarity
@@ -121,9 +136,11 @@ def compute_game_similarity(game1: Dict[str, Any], game2: Dict[str, Any],
 
 def compute_similarity_edges(games: Dict[str, Dict[str, Any]], 
                            edge_threshold: float = 0.35,
-                           mechanics_weight: float = 0.5,
-                           categories_weight: float = 0.3, 
-                           numeric_weight: float = 0.2) -> List[Tuple[str, str, float]]:
+                           mechanics_weight: float = 0.4,
+                           categories_weight: float = 0.25, 
+                           numeric_weight: float = 0.2,
+                           designers_weight: float = 0.1,
+                           publishers_weight: float = 0.05) -> List[Tuple[str, str, float]]:
     """
     Compute pairwise similarities between all games and return edges above threshold.
     Returns list of (game_id1, game_id2, similarity_score) tuples.
@@ -148,7 +165,7 @@ def compute_similarity_edges(games: Dict[str, Dict[str, Any]],
             similarity = compute_game_similarity(
                 games[id1], games[id2],
                 normalized_features[id1], normalized_features[id2],
-                mechanics_weight, categories_weight, numeric_weight
+                mechanics_weight, categories_weight, numeric_weight, designers_weight, publishers_weight
             )
             
             if similarity >= edge_threshold:
@@ -170,9 +187,11 @@ def compute_similarity_edges(games: Dict[str, Dict[str, Any]],
 def compute_cross_similarities(owned_games: Dict[str, Dict[str, Any]], 
                               candidate_games: Dict[str, Dict[str, Any]],
                               top_k: int = 5,
-                              mechanics_weight: float = 0.5,
-                              categories_weight: float = 0.3,
-                              numeric_weight: float = 0.2) -> Dict[str, List[Dict[str, Any]]]:
+                              mechanics_weight: float = 0.4,
+                              categories_weight: float = 0.25,
+                              numeric_weight: float = 0.2,
+                              designers_weight: float = 0.1,
+                              publishers_weight: float = 0.05) -> Dict[str, List[Dict[str, Any]]]:
     """
     Compute similarities between owned games and candidate recommendation games.
     Returns dict mapping owned_game_id -> list of top recommended games with scores.
@@ -196,7 +215,7 @@ def compute_cross_similarities(owned_games: Dict[str, Dict[str, Any]],
             similarity = compute_game_similarity(
                 owned_game, candidate_game,
                 normalized_features[owned_id], normalized_features[candidate_id],
-                mechanics_weight, categories_weight, numeric_weight
+                mechanics_weight, categories_weight, numeric_weight, designers_weight, publishers_weight
             )
             
             candidates_with_scores.append({
@@ -217,9 +236,11 @@ def compute_cross_similarities(owned_games: Dict[str, Dict[str, Any]],
 def find_similar_owned_games(target_game: Dict[str, Any], 
                            owned_games: Dict[str, Dict[str, Any]],
                            top_k: int = 10,
-                           mechanics_weight: float = 0.5,
-                           categories_weight: float = 0.3,
-                           numeric_weight: float = 0.2) -> List[Dict[str, Any]]:
+                           mechanics_weight: float = 0.4,
+                           categories_weight: float = 0.25,
+                           numeric_weight: float = 0.2,
+                           designers_weight: float = 0.1,
+                           publishers_weight: float = 0.05) -> List[Dict[str, Any]]:
     """
     Find owned games most similar to a target game.
     Used for finding games similar to candidates for recommendation scoring.
@@ -232,7 +253,7 @@ def find_similar_owned_games(target_game: Dict[str, Any],
         similarity = compute_game_similarity(
             target_game, owned_game,
             normalized_features["target"], normalized_features[owned_id],
-            mechanics_weight, categories_weight, numeric_weight
+            mechanics_weight, categories_weight, numeric_weight, designers_weight, publishers_weight
         )
         
         similarities.append({

@@ -123,12 +123,41 @@ async function main() {
     selectNode(evt.target);
   });
 
-  // Simple search
+  // Simple search with relevance scoring
   searchInput.addEventListener("input", e => {
     const q = e.target.value.trim().toLowerCase();
     if (!q) { searchResults.innerHTML = ""; return; }
-    const matches = cy.nodes().filter(n => (n.data("label") || "").toLowerCase().includes(q)).slice(0, 12);
-    searchResults.innerHTML = matches.map(n => `<div data-id="${n.id()}">${n.data("label")}</div>`).join("");
+    
+    // Score matches by relevance
+    const matches = cy.nodes()
+      .filter(n => (n.data("label") || "").toLowerCase().includes(q))
+      .map(n => {
+        const label = (n.data("label") || "").toLowerCase();
+        const rating = parseFloat(n.data("averagerating")) || 0;
+        
+        // Calculate relevance score
+        let score = 0;
+        const index = label.indexOf(q);
+        
+        // Position bonus: earlier matches score higher
+        score += (100 - index) / 100;
+        
+        // Exact word match bonus
+        const words = label.split(/\s+/);
+        if (words.some(word => word === q)) score += 2;
+        
+        // Start of word bonus
+        if (words.some(word => word.startsWith(q))) score += 1;
+        
+        // Rating bonus (normalized)
+        score += rating / 10;
+        
+        return { node: n, score, label: n.data("label") };
+      })
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 12);
+    
+    searchResults.innerHTML = matches.map(m => `<div data-id="${m.node.id()}">${m.label}</div>`).join("");
     searchResults.querySelectorAll("div").forEach(div => {
       div.addEventListener("click", () => {
         const id = div.getAttribute("data-id");
@@ -247,7 +276,32 @@ function setupFallbackSearch() {
     const { nodes } = window.fallbackData;
     const matches = nodes
       .filter(game => game.name && game.name.toLowerCase().includes(query))
-      .slice(0, 8);
+      .map(game => {
+        const name = game.name.toLowerCase();
+        const rating = parseFloat(game.averagerating) || 0;
+        
+        // Calculate relevance score
+        let score = 0;
+        const index = name.indexOf(query);
+        
+        // Position bonus: earlier matches score higher
+        score += (100 - index) / 100;
+        
+        // Exact word match bonus
+        const words = name.split(/\s+/);
+        if (words.some(word => word === query)) score += 2;
+        
+        // Start of word bonus
+        if (words.some(word => word.startsWith(query))) score += 1;
+        
+        // Rating bonus (normalized)
+        score += rating / 10;
+        
+        return { game, score };
+      })
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 8)
+      .map(({ game }) => game);
     
     searchResults.innerHTML = matches.map(game => `
       <div onclick="showGameDetails('${game.id}')" style="
