@@ -30,7 +30,7 @@
       "Novel-based"
     ],
     "averageweight": 3.5622,
-    "averagerating": 8.12631,
+    "averagerating": 8.12633,
     "playingtime": 120,
     "minplayers": 1,
     "maxplayers": 2,
@@ -147,7 +147,7 @@
       "Environmental"
     ],
     "averageweight": 1.8462,
-    "averagerating": 7.90653,
+    "averagerating": 7.90656,
     "playingtime": 45,
     "minplayers": 1,
     "maxplayers": 4,
@@ -170,7 +170,7 @@
       "Sports"
     ],
     "averageweight": 1.8089,
-    "averagerating": 7.07092,
+    "averagerating": 7.07077,
     "playingtime": 45,
     "minplayers": 1,
     "maxplayers": 8,
@@ -210,7 +210,7 @@
       "Dice"
     ],
     "averageweight": 1.3784,
-    "averagerating": 6.96047,
+    "averagerating": 6.96316,
     "playingtime": 30,
     "minplayers": 2,
     "maxplayers": 4,
@@ -235,7 +235,7 @@
       "Pirates"
     ],
     "averageweight": 2.4906,
-    "averagerating": 6.92133,
+    "averagerating": 6.92109,
     "playingtime": 120,
     "minplayers": 2,
     "maxplayers": 6,
@@ -278,7 +278,7 @@
       "Dice"
     ],
     "averageweight": 1.1118,
-    "averagerating": 5.6766,
+    "averagerating": 5.6767,
     "playingtime": 30,
     "minplayers": 2,
     "maxplayers": 6,
@@ -300,7 +300,7 @@
       "Card Game"
     ],
     "averageweight": 2.3362,
-    "averagerating": 7.70135,
+    "averagerating": 7.70234,
     "playingtime": 60,
     "minplayers": 1,
     "maxplayers": 5,
@@ -402,7 +402,7 @@
       "Miniatures"
     ],
     "averageweight": 3.9131,
-    "averagerating": 8.5533,
+    "averagerating": 8.55326,
     "playingtime": 120,
     "minplayers": 1,
     "maxplayers": 4,
@@ -481,7 +481,7 @@
       "Party Game"
     ],
     "averageweight": 1.1579,
-    "averagerating": 6.22585,
+    "averagerating": 6.22744,
     "playingtime": 15,
     "minplayers": 3,
     "maxplayers": 6,
@@ -545,7 +545,7 @@
       "Novel-based"
     ],
     "averageweight": 2.9904,
-    "averagerating": 8.29771,
+    "averagerating": 8.29685,
     "playingtime": 150,
     "minplayers": 1,
     "maxplayers": 5,
@@ -565,7 +565,7 @@
       "Card Game"
     ],
     "averageweight": 1.0536,
-    "averagerating": 6.64545,
+    "averagerating": 6.646,
     "playingtime": 10,
     "minplayers": 2,
     "maxplayers": 6,
@@ -594,7 +594,7 @@
       "Fighting"
     ],
     "averageweight": 2.9487,
-    "averagerating": 8.10986,
+    "averagerating": 8.10989,
     "playingtime": 90,
     "minplayers": 1,
     "maxplayers": 4,
@@ -646,8 +646,8 @@
       "Fighting",
       "Miniatures"
     ],
-    "averageweight": 2.7333,
-    "averagerating": 7.20965,
+    "averageweight": 2.7336,
+    "averagerating": 7.20958,
     "playingtime": 90,
     "minplayers": 1,
     "maxplayers": 4,
@@ -734,7 +734,7 @@
       "Transportation"
     ],
     "averageweight": 2.4149,
-    "averagerating": 7.52919,
+    "averagerating": 7.52944,
     "playingtime": 60,
     "minplayers": 2,
     "maxplayers": 4,
@@ -765,7 +765,7 @@
       "Travel"
     ],
     "averageweight": 2.3956,
-    "averagerating": 7.52017,
+    "averagerating": 7.52021,
     "playingtime": 45,
     "minplayers": 2,
     "maxplayers": 4,
@@ -792,7 +792,7 @@
       "Spies / Secret Agents"
     ],
     "averageweight": 3.1657,
-    "averagerating": 8.35131,
+    "averagerating": 8.35138,
     "playingtime": 60,
     "minplayers": 2,
     "maxplayers": 4,
@@ -820,7 +820,7 @@
       "Medical"
     ],
     "averageweight": 2.8282,
-    "averagerating": 8.50893,
+    "averagerating": 8.50898,
     "playingtime": 60,
     "minplayers": 2,
     "maxplayers": 4,
@@ -848,7 +848,7 @@
       "Medical"
     ],
     "averageweight": 2.0619,
-    "averagerating": 7.23514,
+    "averagerating": 7.23509,
     "playingtime": 30,
     "minplayers": 2,
     "maxplayers": 5,
@@ -888,7 +888,7 @@
       "Card Game"
     ],
     "averageweight": 1.1667,
-    "averagerating": 6.98177,
+    "averagerating": 6.98386,
     "playingtime": 15,
     "minplayers": 2,
     "maxplayers": 6,
@@ -989,7 +989,7 @@
       "Card Game"
     ],
     "averageweight": 1.1969,
-    "averagerating": 5.63617,
+    "averagerating": 5.63613,
     "playingtime": 20,
     "minplayers": 2,
     "maxplayers": 6,
@@ -1020,7 +1020,7 @@
       "Mythology",
       "Territory Building"
     ],
-    "averageweight": 4.0772,
+    "averageweight": 4.0768,
     "averagerating": 8.33917,
     "playingtime": 120,
     "minplayers": 1,
@@ -1054,7 +1054,7 @@
       "Wargame"
     ],
     "averageweight": 3.3016,
-    "averagerating": 7.95734,
+    "averagerating": 7.95732,
     "playingtime": 120,
     "minplayers": 2,
     "maxplayers": 5,
@@ -1076,7 +1076,7 @@
       "Science Fiction"
     ],
     "averageweight": 2.0352,
-    "averagerating": 7.82786,
+    "averagerating": 7.828,
     "playingtime": 90,
     "minplayers": 2,
     "maxplayers": 2,
@@ -1107,7 +1107,7 @@
       "Wargame"
     ],
     "averageweight": 2.4957,
-    "averagerating": 7.62662,
+    "averagerating": 7.6265,
     "playingtime": 45,
     "minplayers": 2,
     "maxplayers": 2,
@@ -1133,7 +1133,7 @@
       "Economic"
     ],
     "averageweight": 2.7567,
-    "averagerating": 7.46202,
+    "averagerating": 7.46196,
     "playingtime": 90,
     "minplayers": 1,
     "maxplayers": 4,
@@ -1189,7 +1189,7 @@
       "Real-time"
     ],
     "averageweight": 1.0706,
-    "averagerating": 7.37592,
+    "averagerating": 7.37604,
     "playingtime": 30,
     "minplayers": 4,
     "maxplayers": 8,
@@ -1249,8 +1249,8 @@
       "Movies / TV / Radio theme",
       "Number"
     ],
-    "averageweight": 1.1015,
-    "averagerating": 5.47507,
+    "averageweight": 1.1014,
+    "averagerating": 5.47533,
     "playingtime": 30,
     "minplayers": 2,
     "maxplayers": 10,
@@ -1277,7 +1277,7 @@
       "Educational"
     ],
     "averageweight": 2.4747,
-    "averagerating": 8.00996,
+    "averagerating": 8.00992,
     "playingtime": 70,
     "minplayers": 1,
     "maxplayers": 5,
@@ -1321,7 +1321,7 @@
       "Travel"
     ],
     "averageweight": 1.1735,
-    "averagerating": 5.53585,
+    "averagerating": 5.53587,
     "playingtime": 30,
     "minplayers": 2,
     "maxplayers": 10,
